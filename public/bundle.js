@@ -243,9 +243,9 @@ __webpack_require__.r(__webpack_exports__);
 var $ = jquery__WEBPACK_IMPORTED_MODULE_4___default.a;
  //import plugin from 'jquery-plugin'
 // export for others scripts to use
+// window.$ = $;
+// window.jQuery = jQuery;
 
-window.$ = $;
-window.jQuery = jQuery;
 react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Dota__WEBPACK_IMPORTED_MODULE_3__["default"], null)), document.getElementById('app') // make sure this is the same as the id of the div in your index.html
 ); // $(()=>{
 // //alert('weagewg')

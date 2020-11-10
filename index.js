@@ -10,8 +10,8 @@ import boostrap from 'bootstrap'
 //import plugin from 'jquery-plugin'
 
 // export for others scripts to use
-window.$ = $;
-window.jQuery = jQuery;
+// window.$ = $;
+// window.jQuery = jQuery;
 
 ReactDOM.render(
   <div>
