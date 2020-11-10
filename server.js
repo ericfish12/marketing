@@ -16,6 +16,6 @@ app.get('*', function (req, res, next) {
 
 
   // start listening (and create a 'server' object representing our server)
-app.listen(3333, () =>
+app.listen(process.env.PORT || 3333, () =>
     console.log(`Mixing it up on port 3333`)
   )
