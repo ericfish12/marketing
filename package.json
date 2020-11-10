@@ -1,0 +1,32 @@
+{
+  "name": "stackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "start-dev": "webpack -w & nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "jquery-plugin": "0.0.0-ignored",
+    "popper.js": "^1.16.1",
+    "puppeteer": "^5.3.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  }
+}
