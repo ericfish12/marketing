@@ -29,17 +29,18 @@ const heros =await array.json()
     return(<div>2</div>)
     else
     return(
-      
+     
       <div className = 'container'>
      
 {heros.map((hero,index)=>{
+   if (index<=4)
   return(
 <div className ='child' key = {index} >
-
+<button>3333</button>
 <div>
 <img width={203.3} height={150} src={hero} name = {index} id ={index}/>
 <br/>
-
+<div className = 'daddy'>dwgwerjretjetrherh</div>
 
 </div>
 

@@ -4,4 +4,147 @@
     flex-wrap: wrap;
   
   }
+  img:hover {
+    flex-grow: 5;
+    /* width:600 */
+    /* transition: flex-grow .3s;
+    -webkit-transition: flex-grow .3s; */
+  }
+
+  .daddy{
+    overflow: hidden;
+  border-right: solid rgb(203, 15, 93);
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  color: #000;
+  font-family: ambroise-std;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.9em;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(203, 15, 93);
+    }
+  }
+
+  .item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+  }
+  
+  div ol{
+    border: 4px solid salmon
+  }
+
+.GoalHero{
+  width:450px; height:470px;position: relative;
+   margin:150px auto 0;
+   overflow: hidden;
+}
+ol{
+  position: absolute;right:5px;bottom:5px;
+   z-index: 2;
+}
+
+ol li{
+  /* float:left;  */
+  margin-right:5px; 
+  display: inline; 
+  cursor:pointer; background: seashell;border:1px solid
+  cadetblue
+}
+.GoalHeroActive{
+  padding:3px 8px; font-weight: bold; color:whitesmoke;
+  background:orangered;position: relative;  bottom :2px;
+}
+.GoalHeroContainer{border: 4px solid rebeccapurple; width:4500px;height:470px;
+  position: absolute; top:0; left :0;
+   z-index: 1;
+}
+.GoalHeroContainer div{ float:left; 
+width: 150px;height:470px; display: inline-block;
+ /* float:top; */
+}
+.GoalHeroContainer img{
+   /* float:top; */
+  width:150px;height:470px ; 
+}
+
+
+.tennisTable{
+  height: 100vh; 
  
+  justify-content: center;
+  width:100vw;
+  
+   /* margin-top: 0px; */
+
+/* width: 1434px;
+height:722px; */
+border:4px solid blueviolet;
+ /* position: abs */
+
+}
+
+.tennisTable img{
+  width: 100vw;
+  height:100%;
+  /* width: 1434px;
+height:722px; */
+left:0px;
+top:0px;
+
+
+position:absolute;
+}
+
+.tennis{
+  width:20px;
+  height:20px;
+background-color: coral;
+border-radius: 50%;
+position: absolute;
+}
+
+.aboutMe{
+  width: 100vw;
+position: relative;
+height:36vw;
+top:5vw;
+left:-11px;
+margin: 0em;
+background-color:white;
+border:3px solid gold
+}
+
+.aboutMe img{
+  position: absolute;
+  right:5px;
+left:1084px; 
+width:350px;
+height:36vw;
+}
+.HeadFont{
+  font-size:99px
+}

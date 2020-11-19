@@ -11,26 +11,26 @@ module.exports = {
       path:  __dirname, // assumes your bundle.js will also be in the root of your project folder
       filename: './public/bundle.js'
     },
-    devtool: 'source-maps',
-  //   plugins: [
-  //     new webpack.ProvidePlugin({
-  //         $: "jquery",
-  //         jQuery: "jquery",
-  //         "window.jQuery": "jquery"
-  //     })
-  // ],
-  // externals: {
-  //   jquery: 'jQuery'
-  // },
+    resolve: {
+      extensions: ['.js', '.jsx']
+    },
+    devtool: false,
+    performance: {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000
+  },
+    watchOptions: {
+      ignored: /node_modules/
+    },
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.jsx?$/,
           exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader'
-          }
+          loader: 'babel-loader'
         }
       ]
     }
   }
+  
