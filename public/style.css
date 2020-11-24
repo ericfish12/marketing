@@ -1,21 +1,34 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  
-  }
-  img:hover {
-    flex-grow: 5;
-    /* width:600 */
-    /* transition: flex-grow .3s;
-    -webkit-transition: flex-grow .3s; */
-  }
 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width:100vw;
+ overflow-x: hidden;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  color: #252525;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+}
   .daddy{
     overflow: hidden;
   border-right: solid rgb(203, 15, 93);
   white-space: nowrap;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
   color: #000;
   font-family: ambroise-std;
   font-weight: 500;
@@ -42,7 +55,7 @@
     }
   }
 
-  .item {
+  /* .item {
     width: 200px;
     height: 200px;
     margin: 50px auto;
@@ -51,24 +64,23 @@
     text-align: center;
     color: #FFF;
     font-size: 3em;
-  }
+  } */
   
-  div ol{
+  /* div ol{
     border: 4px solid salmon
-  }
+  } */
 
 .GoalHero{
-  width:450px; height:470px;position: relative;
-   margin:150px auto 0;
+  width:240px; height:470px;position: relative;
+   margin-left:85px ;
    overflow: hidden;
 }
-ol{
+/* ol{
   position: absolute;right:5px;bottom:5px;
    z-index: 2;
-}
+} */
 
-ol li{
-  /* float:left;  */
+/* ol li{
   margin-right:5px; 
   display: inline; 
   cursor:pointer; background: seashell;border:1px solid
@@ -77,74 +89,281 @@ ol li{
 .GoalHeroActive{
   padding:3px 8px; font-weight: bold; color:whitesmoke;
   background:orangered;position: relative;  bottom :2px;
-}
-.GoalHeroContainer{border: 4px solid rebeccapurple; width:4500px;height:470px;
+} */
+
+.GoalHeroContainer{ width:4500px;height:470px;
   position: absolute; top:0; left :0;
    z-index: 1;
+   /* border-radius: 2%; */
 }
-.GoalHeroContainer div{ float:left; 
-width: 150px;height:470px; display: inline-block;
+.GoalHeroContainer div{ 
+width: 240px;height:470px; display: inline-block;
  /* float:top; */
 }
 .GoalHeroContainer img{
    /* float:top; */
-  width:150px;height:470px ; 
+  width:240px;height:470px ; 
+  border-radius: 6% 6% 4% 4%;
+  
 }
 
 
 .tennisTable{
-  height: 100vh; 
  
-  justify-content: center;
-  width:100vw;
+  height: 100vh; 
+
   
+  width:100vw;
+  margin:0px auto;
    /* margin-top: 0px; */
 
 /* width: 1434px;
 height:722px; */
-border:4px solid blueviolet;
- /* position: abs */
+
+  position: static;
+
+ 
 
 }
 
 .tennisTable img{
-  width: 100vw;
-  height:100%;
-  /* width: 1434px;
-height:722px; */
-left:0px;
-top:0px;
+  margin:77px auto;
+height:77vh;
+
+ 
+
+  position: absolute;
+  right:77px;
+/* left:1084px;  */
+width:350px;
+z-index:2;
 
 
-position:absolute;
 }
 
 .tennis{
-  width:20px;
-  height:20px;
+  top:333px;
+  width:166px;
+  height:2px;
+background-color: coral;
+border-radius: 50%;
+position: absolute;
+}
+
+.tennis2{
+  top:666px;
+  width:166px;
+  height:2px;
 background-color: coral;
 border-radius: 50%;
 position: absolute;
 }
 
 .aboutMe{
-  width: 100vw;
+left:22px;
+  width: 1100px;
 position: relative;
 height:36vw;
-top:5vw;
-left:-11px;
-margin: 0em;
-background-color:white;
-border:3px solid gold
+top:5.8vw;
+z-index: 1;
+
+
+/* border:3px solid gold */
 }
 
-.aboutMe img{
-  position: absolute;
-  right:5px;
-left:1084px; 
-width:350px;
-height:36vw;
-}
+
 .HeadFont{
-  font-size:99px
+  font-size:88px
+}
+
+.BigProjectsTable{
+
+  width: 100vw;
+    height: 250vh;
+/* top:85vh; */
+    background-color: white;
+    /* border:4px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch ;
+    position: relative;
+ 
+}
+.GoalHeroLeft{
+  width: 59vw;
+    height: 60vh;
+  /* border:4px solid burlywood; */
+  /* flex-shrink: inherit; */
+  display:inline-flexbox;
+}
+.GoalHeroRight{
+  display: inline-flexbox;
+  width: 39vw;
+    height: 60vh;
+  /* border:4px solid burlywood; */
+  /* flex-shrink: inherit; */
+}
+.GoalHeroText{
+  
+  margin:15px auto;
+ 
+  width:700px;
+  height:300px;
+  /* border:1px solid goldenrod */
+}
+.CheeseLeft{
+ 
+  width: 59vw;
+  height: 60vh;
+/* border:4px solid burlywood; */
+
+
+}
+
+.CheeseRight{
+ 
+  width: 39vw;
+    height: 60vh;
+  /* border:4px solid burlywood;
+   */
+
+}
+.CheeseRight img{
+ margin:40px auto;
+  width:400px;
+  height:250px;
+}
+
+
+.IntroLeft{
+  width: 29vw;
+  height: 60vh;
+/* border:4px solid burlywood; */
+
+
+}
+
+.IntroRight{
+ 
+  width: 59vw;
+    height: 60vh;
+  /* border:4px solid burlywood; */
+  
+
+}
+.IntroLeft img{
+  margin-left:144px;
+   width:300px;
+   height:350px;
+   border-radius: 4%;
+ }
+
+
+/* 
+.btn-2 {
+  letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+backface-visibility: hidden;
+border: 1px solid rgba(#fff, 0);
+bottom: 0px;
+content: " ";
+display: block;
+margin: 0 auto;
+position: relative;
+transition: all 280ms ease-in-out;
+width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+backface-visibility: hidden;
+border-color: #fff;
+transition: width 350ms ease-in-out;
+width: 70%;
+}
+
+.btn-2:hover:before {
+bottom: auto;
+top: 0;
+width: 70%;
+}
+
+
+  
+  a {
+    
+    margin-left:33px;
+    top:33px;
+    border-bottom: 1px solid;
+    color:red;
+    line-height: 1.4;
+    padding: .25em;
+    text-decoration: none;
+    
+  
+} */
+
+header {
+  display: flex;
+  position: fixed;
+  margin: 0 4em;
+  padding: 10px;
+  width: calc(100vw - 8em);
+  color: #fff;
+  background-color: rgba(37, 37, 37, 0.8);
+  border-radius: 0 0 1em 1em;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(-4em);
+  transition: opacity 0.25s, transform 0.5s;
+}
+
+header.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+header .logo {
+  flex-grow: 1;
+  padding-top: 0.25em;
+}
+header .logo img {
+  width: 8em;
+}
+header nav {
+  display: flex;
+}
+
+.nav-item {
+  height: 1.5em;
+  margin: 0 1.5em 0 0;
+}
+
+.nav-item a {
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+.nav-item a:hover {
+  color: #202b47;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: #d3d3d3;
+}
+
+.TechnologiesContainer{
+
+
+  width:100vw;
+  height:100vh;
+  border:4px solid red;
 }

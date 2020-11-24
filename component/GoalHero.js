@@ -7,63 +7,59 @@ export default class GoalHero extends React.Component {
     render() {
         return (
             <div class="GoalHero" id="GoalHero">
-                <ol>
+                {/* <ol>
                     <li class="GoalHeroActive">1</li>
                     <li>2</li>
                     <li>3</li>
                     <li>4</li>
                     <li>5</li>
-                </ol>
+                </ol> */}
 
                 <div class="GoalHeroContainer">
+                    
                     <div>
-                        <img src={allHeros[0]} />
+                        <img src='GoalHero1.png' />
                     </div>
                     <div>
-                        <img src={allHeros[1]} />
+                        <img src='GoalHero2.png'/>
                     </div>
                     <div>
-                        <img src={allHeros[2]} />
+                        <img src='GoalHero3.png' />
                     </div>
                     <div>
-                        <img src={allHeros[3]} />
+                        <img src='GoalHero4.png' />
                     </div>
                     <div>
-                        <img src={allHeros[4]} />
+                        <img src='GoalHero5.png' />
                     </div>
                     <div>
-                        <img src={allHeros[5]} />
+                        <img src='GoalHero6.png' />
                     </div>
                     <div>
-                        <img src={allHeros[6]} />
+                        <img src='GoalHero7.png' />
                     </div>
                     <div>
-                        <img src={allHeros[7]} />
+                        <img src='GoalHero8.png' />
                     </div>
                     <div>
-                        <img src={allHeros[8]} />
+                        <img src='GoalHero9.png' />
                     </div>
                     <div>
-                        <img src={allHeros[9]} />
+                        <img src='GoalHero10.png' />
                     </div>
                     <div>
-                        <img src={allHeros[10]} />
+                        <img src='GoalHero11.png' />
                     </div>
                     <div>
-                        <img src={allHeros[11]} />
+                        <img src='GoalHero12.png' />
                     </div>
                     <div>
-                        <img src={allHeros[12]} />
+                        <img src='GoalHero13.png' />
                     </div>
                     <div>
-                        <img src={allHeros[0]} />
+                        <img src='GoalHero1.png' />
                     </div>
-                    <div>
-                        <img src={allHeros[1]} />
-                    </div>
-                    <div>
-                        <img src={allHeros[2]} />
-                    </div>
+                   
                 </div>
             </div>
         );
@@ -96,7 +92,7 @@ tab()
 
 function tab (){
     oul.animate({
-        left:currentPng*-150
+        left:currentPng*-240
     },500,function(){
 if(currentPng==13){
 currentPng=0;
