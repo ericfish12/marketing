@@ -10,6 +10,7 @@ import GoalHero from "./component/GoalHero";
 import {Head} from './component/Head'
 import{Projects}from './component/Projects'
 import{Technologies}from './component/Technologies'
+import{Contact}from './component/Contact'
 //import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
@@ -42,6 +43,7 @@ ReactDOM.render(
  <h1>Projects</h1>
  <Projects />
 <Technologies />
+<Contact />
   {/* <div  className='item' data-aos="fade-in">fade in</div>
   <div  className='item' data-aos="fade-in">fade in</div>
   <div  className='item' data-aos="fade-in">fade in</div>
