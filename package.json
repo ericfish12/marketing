@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build-client": "webpack",
+    "build-client-watch": "webpack -w",
+    "deploy": "script/deploy",
+    "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
-    "start-dev": "webpack -w & nodemon ./Server/server.js",
+    "start": "nodemon ./Server/server.js",
+  
     "seed":"node ./Server/seed.js"
   },
   "author": "",
