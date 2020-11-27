@@ -5,8 +5,8 @@ const $ = JQuery.default;
 
 export const Projects = () => {
   return (
-    <div id='projects' class="BigProjectsTable" data-aos="flip-up">
-      <div class="GoalHeroLeft" data-aos="slide-left">
+    <div id='projects' class="BigProjectsTable" data-aos="fade-up">
+      <div class="GoalHeroLeft" data-aos="fade-left">
         <div class="GoalHeroText">
           <h3>GoalHero</h3>
           Goal Hero is a mobile game/lifestyle app. The main purpose of Goal
@@ -23,10 +23,10 @@ export const Projects = () => {
 <a href ='https://github.com/GoalHero/GoalHero'>GITHUB</a>
         </div>
       </div>
-      <div class="GoalHeroRight" data-aos="slide-right">
+      <div class="GoalHeroRight" data-aos="fade-right">
         <GoalHero />
       </div>
-      <div class="CheeseLeft" data-aos="slide-left">
+      <div class="CheeseLeft" data-aos="fade-left">
         <div class="GoalHeroText">
           <h3>Grace Cheese Prime</h3>
           A basic e-commerce website that sells cheeses. Developed with JavaScript, React, Redux, Express and PostgreSQL. Designed and implemented a simple user experience to view and purchase cheeses.Used conventional Rest API and git workflow to manage team development.
@@ -38,7 +38,7 @@ export const Projects = () => {
         </div>
       </div>
 
-      <div class="CheeseRight" data-aos="slide-right">
+      <div class="CheeseRight" data-aos="fade-right">
         <img src="cheesePrime.jpg" />
       </div>
 

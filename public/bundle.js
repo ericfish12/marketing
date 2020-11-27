@@ -620,10 +620,10 @@ var Projects = function Projects() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "projects",
     "class": "BigProjectsTable",
-    "data-aos": "flip-up"
+    "data-aos": "fade-up"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroLeft",
-    "data-aos": "slide-left"
+    "data-aos": "fade-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroText"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "GoalHero"), "Goal Hero is a mobile game/lifestyle app. The main purpose of Goal Hero is to motivate users to complete goals for themselves, while also playing a game. A user can play as a hero and fight against a monster to unlock new and stronger heroes. To get strong enough to defeat the monster, the user must complete goals they set for themself. Tech Used: React Native, Expo, React Native Game Engine, Express, Heroku, Matter.js, PostgreSQL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -634,10 +634,10 @@ var Projects = function Projects() {
     href: "https://github.com/GoalHero/GoalHero"
   }, "GITHUB"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroRight",
-    "data-aos": "slide-right"
+    "data-aos": "fade-right"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GoalHero__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "CheeseLeft",
-    "data-aos": "slide-left"
+    "data-aos": "fade-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroText"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Grace Cheese Prime"), "A basic e-commerce website that sells cheeses. Developed with JavaScript, React, Redux, Express and PostgreSQL. Designed and implemented a simple user experience to view and purchase cheeses.Used conventional Rest API and git workflow to manage team development."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -648,7 +648,7 @@ var Projects = function Projects() {
     href: "https://github.com/2008-FSA-Grace-Shopper-Cheese/GraceShopper"
   }, "GITHUB"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "CheeseRight",
-    "data-aos": "slide-right"
+    "data-aos": "fade-right"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "cheesePrime.jpg"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
