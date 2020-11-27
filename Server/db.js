@@ -33,7 +33,7 @@ async function seed() {
     console.log('db synced!')
 }
 
-// seed()
+//  seed()
 module.exports = {
     db,
     Messages,
