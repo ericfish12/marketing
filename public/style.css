@@ -24,6 +24,12 @@ h2 {
   font-size: 2em;
   font-weight: normal;
 }
+
+h4{
+  display:inline;
+}
+
+
   .daddy{
     overflow: hidden;
   border-right: solid rgb(203, 15, 93);
@@ -126,7 +132,7 @@ height:722px; */
 
 }
 
-.tennisTable img{
+.MePhoto{
   margin:77px auto;
 height:77vh;
 
@@ -151,13 +157,48 @@ position: absolute;
 }
 
 .tennis2{
-  top:666px;
-  width:166px;
-  height:2px;
+  top:679px;
+  width:866px;
+  height:4px;
 background-color: coral;
 border-radius: 50%;
 position: absolute;
 }
+
+.tennis3{
+  top:1111px;
+  width:866px;
+  height:4px;
+background-color: coral;
+border-radius: 50%;
+position: absolute;
+}
+
+
+
+
+
+
+.GitEmail{
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+  width:350px;
+  height:90px;
+  border: 4px peru;
+}
+.GitEmail img{
+  background-color:wheat;
+border-radius: 50%;
+  width:70px;
+  height:70px;
+
+}
+.GitEmail img:hover {
+  transform: scale(1.2);
+}
+
+
 
 .aboutMe{
 left:22px;
@@ -191,7 +232,7 @@ z-index: 1;
 }
 .GoalHeroLeft{
   width: 59vw;
-    height: 60vh;
+    height: 70vh;
   /* border:4px solid burlywood; */
   /* flex-shrink: inherit; */
   display:inline-flexbox;
@@ -199,18 +240,45 @@ z-index: 1;
 .GoalHeroRight{
   display: inline-flexbox;
   width: 39vw;
-    height: 60vh;
+    height: 70vh;
   /* border:4px solid burlywood; */
   /* flex-shrink: inherit; */
 }
 .GoalHeroText{
   
   margin:15px auto;
- 
+ font-size: 22px;
   width:700px;
-  height:300px;
+  height:240px;
   /* border:1px solid goldenrod */
 }
+.GoalHeroDemo{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+    width:450px;
+    height:90px;
+   
+margin-left:160px;
+}
+.GoalHeroDemo a{
+  font-size: 29px;
+  border:4px solid black;
+  border-radius: 2%;
+  height:36px;
+  text-decoration: none;
+  color:black;
+ 
+}
+.GoalHeroDemo a:hover{
+  background-color: black;
+  color:white;
+}
+
+
+
+
+
 .CheeseLeft{
  
   width: 59vw;
@@ -236,6 +304,7 @@ z-index: 1;
 
 
 .IntroLeft{
+  margin-left:120px;
   width: 29vw;
   height: 60vh;
 /* border:4px solid burlywood; */
@@ -252,7 +321,7 @@ z-index: 1;
 
 }
 .IntroLeft img{
-  margin-left:144px;
+  margin:29px auto;
    width:300px;
    height:350px;
    border-radius: 4%;
@@ -347,7 +416,8 @@ header nav {
   margin: 0 1.5em 0 0;
 }
 
-.nav-item a {
+
+.nav-item a,.logo a {
   font-size: 1.3em;
   color: #fff;
   text-decoration: none;
@@ -361,11 +431,25 @@ header nav {
 }
 
 .TechnologiesContainer{
-
-
+text-align: center;
+font-size: 22px;;
   width:100vw;
   height:100vh;
   border:4px solid red;
+}
+.TechnologiesContainer a{
+  font-size: 29px;
+  border:4px solid black;
+  border-radius: 2%;
+  height:36px;
+  text-decoration: none;
+  color:black;
+  margin:20px;
+  padding: 10px;
+}
+.TechnologiesContainer a:hover{
+  background-color: black;
+  color:white;
 }
 
 .ContactContainer{
@@ -398,7 +482,7 @@ margin-top:66px;
   margin-left:300px;
   width:20vw;
   height :80vh;
-  border:1px solid fuchsia
+  /* border:1px solid fuchsia */
 }
 
 
@@ -406,18 +490,18 @@ margin-top:66px;
 .ContactRight{
   width:45vw;
   height:80vh;
-  border:1px solid fuchsia
+  /* border:1px solid fuchsia */
 }
 
 
 #inputName{
- border:3px solid peru;
+ /* border:3px solid peru; */
  width:250px;
  height:40px;
 }
 
 #inputMessage{
-  border:3px solid peru;
+  /* border:3px solid peru; */
   width:500px;
   height:250px;
  
@@ -430,5 +514,5 @@ margin-top:66px;
 #inputEmail{
   width:250px;
  height:40px;
-  border:3px solid peru;
+  /* border:3px solid peru; */
 }

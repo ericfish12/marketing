@@ -25,17 +25,18 @@ ReactDOM.render(
   <div>
   <header>
     <div class="logo">
+    <a href="#">Shan Jiang(Fish)</a> 
       {/* <img alt="logo" src="images/logo.png" /> */}
     </div>
     <nav>
       <div class="nav-item">
-        <a href="#">AboutMe</a>
+        <a href="#intro">AboutMe</a>
       </div>
       <div class="nav-item">
-        <a href="#">Projects</a>
+        <a href="#projects">Projects</a>
       </div>
       <div class="nav-item">
-        <a href="#">Contact</a>
+        <a href="#contactMe">Contact</a>
       </div>
     </nav>
   </header>
@@ -110,6 +111,7 @@ setInterval(function (){
   //  let t = $('.tennis').offset().top+tt
 $('.tennis').css('left',`${l}px`)
 $('.tennis2').css('left',`${l2}px`)
+$('.tennis3').css('left',`${l2}px`)
 // .css('top',`${t}px`)
 
 // if( $('.tennis').offset().left>=1444)
@@ -117,7 +119,7 @@ $('.tennis2').css('left',`${l2}px`)
 if( $('.tennis').offset().left>=666  ||$('.tennis').offset().left<=0)
 ll=0-ll
 
-if( $('.tennis2').offset().left>=1333  ||$('.tennis2').offset().left<=0)
+if( $('.tennis2').offset().left>=666  ||$('.tennis2').offset().left<=0)
 ll2=0-ll2
 // if( $('.tennis').offset().top>=700 ||$('.tennis').offset().top<=0)
 // tt=0-tt
@@ -201,7 +203,7 @@ document.addEventListener("scroll", function () {
     // if ($(this).offset()<600)
     // $(this).hide().show(2)
 
-    if ($(window).scrollTop() >= 11777) $('div').css("border", "4px solid red");
+    if ($(window).scrollTop() >= 3999) $('div').css("border", "4px solid red");
 
     if ($(this).offset().top - $(window).scrollTop() < 600) {
       //   $("img").hide(1000)

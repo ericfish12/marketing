@@ -50,10 +50,10 @@ else alert('Please use a valid Email')
 
   render() {
     return (
-        <div>
-     
+        <div data-aos = 'fade-up'>
+     <h1>Contact</h1>
         <form onSubmit={this.handleSubmit}>
-             <div class="ContactContainer">
+             <div id='contactMe' class="ContactContainer">
          
         <div class = 'ContactLeft'>
           <label htmlFor="Name">Name:</label>
@@ -63,6 +63,7 @@ else alert('Please use a valid Email')
             name="name"
             value={this.state.name}
             onChange={this.handleChange}
+            required="required"
           />
 
           <label htmlFor="email">Email:</label>
