@@ -460,6 +460,11 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 var $ = jquery__WEBPACK_IMPORTED_MODULE_2___default.a;
+var array = [];
+
+for (var i = 1; i < 13; i++) {
+  array[i] = i;
+}
 
 var GoalHero = /*#__PURE__*/function (_React$Component) {
   _inherits(GoalHero, _React$Component);
@@ -475,7 +480,7 @@ var GoalHero = /*#__PURE__*/function (_React$Component) {
   _createClass(GoalHero, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         "class": "GoalHero",
         id: "GoalHero"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -508,7 +513,21 @@ var GoalHero = /*#__PURE__*/function (_React$Component) {
         src: "GoalHero13.png"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "GoalHero1.png"
-      }))));
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "ol"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        id: "leftArrow"
+      }, "\u22B2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        k: 0,
+        "class": "GoalHeroActive"
+      }), array.map(function (element, index) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          k: index
+        });
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        id: "rightArrow"
+      }, "\u22B3")));
     }
   }]);
 
@@ -524,12 +543,71 @@ $(function () {
   //        left:$(this).index()*-150
   //    },500)
   // })
+  // siblings()
 
   var currentPng = 0;
-  setInterval(function () {
+  var timer = setInterval(function () {
     currentPng++;
-    tab(); //console.log(currentPng)
+    tab();
+
+    if ($('.ol .GoalHeroActive').next().attr('k') == undefined) {
+      $('.ol div').first().attr('class', "GoalHeroActive").siblings().attr('class', "");
+    } else $('.ol .GoalHeroActive').next().attr('class', "GoalHeroActive").siblings().attr('class', "");
+
+    console.log($('.ol .GoalHeroActive').attr('k'));
   }, 2000);
+  $('.ol div').click(function () {
+    $(this).attr('class', "GoalHeroActive").siblings().attr('class', "");
+    currentPng = $(this).attr('k');
+    var whichOne = $(this).attr('k');
+    oul.animate({
+      left: whichOne * -240
+    }, 500, function () {
+      if (currentPng == 13) {
+        currentPng = 0;
+        oul.css('left', 0);
+      }
+    });
+  });
+  $('#leftArrow').click(function () {
+    if (currentPng != 0) {
+      currentPng--;
+      $('.ol .GoalHeroActive').prev().attr('class', "GoalHeroActive").siblings().attr('class', "");
+      var moveToWhich = $('.ol .GoalHeroActive').attr('k');
+      console.log(moveToWhich);
+      oul.animate({
+        left: moveToWhich * -240
+      }, 200, function () {// if(currentPng==13){
+        // currentPng=0;
+        // oul.css('left',0)}
+      });
+    }
+  });
+  $('#rightArrow').click(function () {
+    if (currentPng != 12) {
+      currentPng++;
+      $('.ol .GoalHeroActive').next().attr('class', "GoalHeroActive").siblings().attr('class', "");
+      var moveToWhich = $('.ol .GoalHeroActive').attr('k');
+      console.log(moveToWhich);
+      oul.animate({
+        left: moveToWhich * -240
+      }, 200, function () {});
+    }
+  });
+  $('.GoalHero,.ol').mouseenter(function () {
+    clearInterval(timer);
+  }).mouseleave(function () {
+    timer = setInterval(function () {
+      currentPng++;
+      tab();
+
+      if ($('.ol .GoalHeroActive').next().attr('k') == undefined) {
+        $('.ol div').first().attr('class', "GoalHeroActive").siblings().attr('class', "");
+      } else $('.ol .GoalHeroActive').next().attr('class', "GoalHeroActive").siblings().attr('class', "");
+
+      console.log($('.ol .GoalHeroActive').attr('k'));
+    }, 2000);
+  });
 
   function tab() {
     oul.animate({
@@ -569,13 +647,13 @@ var Head = function Head() {
     "class": "MePhoto",
     src: "me.jpeg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "aboutMe"
+    className: "aboutMe"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    "class": "daddy"
+    className: "daddy"
   }, "FULL-STACK SOFTWARE ENGINEER & WEB DEVELOPER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    "class": "HeadFont"
+    className: "HeadFont"
   }, " Shan Jiang(Fish) "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Also a tennis player, a pizza maker, a pop singer, a racing driver, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "a traveller..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "GitEmail"
+    className: "GitEmail"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "mailto:ericfish1221@gmail.com?subject=HELLO!"
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -589,9 +667,9 @@ var Head = function Head() {
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "github.png"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "tennis"
+    className: "tennis"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "tennis2"
+    className: "tennis2"
   }));
 };
 
@@ -748,19 +826,19 @@ aos__WEBPACK_IMPORTED_MODULE_5___default.a.init(); //import plugin from 'jquery-
 // window.jQuery = jQuery;
 
 react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  "class": "logo"
+  className: "logo"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "#"
 }, "Shan Jiang(Fish)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  "class": "nav-item"
+  className: "nav-item"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "#intro"
 }, "AboutMe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  "class": "nav-item"
+  className: "nav-item"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "#projects"
 }, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  "class": "nav-item"
+  className: "nav-item"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "#contactMe"
 }, "Contact")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Head__WEBPACK_IMPORTED_MODULE_7__["Head"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Projects__WEBPACK_IMPORTED_MODULE_8__["Projects"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Technologies__WEBPACK_IMPORTED_MODULE_9__["Technologies"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Contact__WEBPACK_IMPORTED_MODULE_10__["Contact"], null)), document.getElementById("app") // make sure this is the same as the id of the div in your index.html
@@ -860,7 +938,7 @@ document.addEventListener("scroll", function () {
   group.each(function () {
     // if ($(this).offset()<600)
     // $(this).hide().show(2)
-    if ($(window).scrollTop() >= 3999) $('div').css("border", "4px solid red");
+    if ($(window).scrollTop() >= 2999) $('div').css("border", "4px solid red");
 
     if ($(this).offset().top - $(window).scrollTop() < 600) {//   $("img").hide(1000)
       //  $(this).show(22222)

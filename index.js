@@ -24,18 +24,18 @@ ReactDOM.render(
   
   <div>
   <header>
-    <div class="logo">
+    <div className="logo">
     <a href="#">Shan Jiang(Fish)</a> 
       {/* <img alt="logo" src="images/logo.png" /> */}
     </div>
     <nav>
-      <div class="nav-item">
+      <div className="nav-item">
         <a href="#intro">AboutMe</a>
       </div>
-      <div class="nav-item">
+      <div className="nav-item">
         <a href="#projects">Projects</a>
       </div>
-      <div class="nav-item">
+      <div className="nav-item">
         <a href="#contactMe">Contact</a>
       </div>
     </nav>
@@ -203,7 +203,7 @@ document.addEventListener("scroll", function () {
     // if ($(this).offset()<600)
     // $(this).hide().show(2)
 
-    if ($(window).scrollTop() >= 3999) $('div').css("border", "4px solid red");
+    if ($(window).scrollTop() >= 2999) $('div').css("border", "4px solid red");
 
     if ($(this).offset().top - $(window).scrollTop() < 600) {
       //   $("img").hide(1000)
