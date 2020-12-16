@@ -6,16 +6,18 @@ const $ = JQuery.default;
 export const Head = () => {
   return (
     <div class="tennisTable">
+      <div className = 'MePhotoBox'>
        <img class='MePhoto' src='me.jpeg'/>
+       </div>
       {/* <img src='1.png' />  */}
       {/* <img src="coffee.jpeg" /> */}
 <div className = 'aboutMe'>
    
-    <h1 className='daddy'>FULL-STACK SOFTWARE ENGINEER & WEB DEVELOPER</h1>
+    <h2 className='daddy'>FULL-STACK SOFTWARE ENGINEER & WEB DEVELOPER</h2>
     <h1 className='HeadFont'> Shan Jiang(Fish) </h1>
     <br/>
     
-   <h1> Also a tennis player, a pizza maker, a pop singer, a racing driver, <br/>a traveller...</h1>
+   <h2> Also a tennis player, a pizza maker, a pop singer, a racing driver, <br/>a traveller...</h2>
   <div className ='GitEmail'>
    <a href ="mailto:ericfish1221@gmail.com?subject=HELLO!"> <img src='email.png'/></a>
   
@@ -24,8 +26,8 @@ export const Head = () => {
 
   </div>
 </div>
-      <div className="tennis"></div>
-      <div className="tennis2"></div>
+      {/* <div className="tennis"></div>
+      <div className="tennis2"></div> */}
     </div>
   );
 };

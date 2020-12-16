@@ -11,6 +11,7 @@ import {Head} from './component/Head'
 import{Projects}from './component/Projects'
 import{Technologies}from './component/Technologies'
 import{Contact}from './component/Contact'
+import {AboutMe}from'./component/AboutMe'
 //import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
@@ -41,8 +42,9 @@ ReactDOM.render(
     </nav>
   </header>
  <Head />
- <h1>Projects</h1>
+ <h1 className = 'ProjectsTitle'>Projects</h1>
  <Projects />
+ <AboutMe/>
 <Technologies />
 <Contact />
   {/* <div  className='item' data-aos="fade-in">fade in</div>
@@ -99,32 +101,32 @@ window.addEventListener("scroll", () => {
 
 
 
-let ll=60;
-let ll2=60;
-let tt =4;
+// let ll=60;
+// let ll2=60;
+// let tt =4;
 
-setInterval(function (){
+// setInterval(function (){
 
 
-  let l = $('.tennis').offset().left+ll
-  let l2 = $('.tennis2').offset().left+ll2
-  //  let t = $('.tennis').offset().top+tt
-$('.tennis').css('left',`${l}px`)
-$('.tennis2').css('left',`${l2}px`)
-$('.tennis3').css('left',`${l2}px`)
-// .css('top',`${t}px`)
+//   let l = $('.tennis').offset().left+ll
+//   let l2 = $('.tennis2').offset().left+ll2
+//   //  let t = $('.tennis').offset().top+tt
+// $('.tennis').css('left',`${l}px`)
+// $('.tennis2').css('left',`${l2}px`)
+// $('.tennis3').css('left',`${l2}px`)
+// // .css('top',`${t}px`)
 
-// if( $('.tennis').offset().left>=1444)
-// $('.tennis').css('left','1000px')
-if( $('.tennis').offset().left>=666  ||$('.tennis').offset().left<=0)
-ll=0-ll
+// // if( $('.tennis').offset().left>=1444)
+// // $('.tennis').css('left','1000px')
+// if( $('.tennis').offset().left>=666  ||$('.tennis').offset().left<=0)
+// ll=0-ll
 
-if( $('.tennis2').offset().left>=666  ||$('.tennis2').offset().left<=0)
-ll2=0-ll2
-// if( $('.tennis').offset().top>=700 ||$('.tennis').offset().top<=0)
-// tt=0-tt
-//console.log($('.tennis').offset().left)
-},20)
+// if( $('.tennis2').offset().left>=666  ||$('.tennis2').offset().left<=0)
+// ll2=0-ll2
+// // if( $('.tennis').offset().top>=700 ||$('.tennis').offset().top<=0)
+// // tt=0-tt
+// //console.log($('.tennis').offset().left)
+// },20)
 
 
 
@@ -203,7 +205,7 @@ document.addEventListener("scroll", function () {
     // if ($(this).offset()<600)
     // $(this).hide().show(2)
 
-    if ($(window).scrollTop() >= 2999) $('div').css("border", "4px solid red");
+    if ($(window).scrollTop() >= 3999) $('div').css("border", "4px solid red");
 
     if ($(this).offset().top - $(window).scrollTop() < 600) {
       //   $("img").hide(1000)

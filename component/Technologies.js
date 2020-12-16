@@ -6,6 +6,8 @@ const $ = JQuery.default;
 export const Technologies = () => {
   return (
 <div class = 'TechnologiesContainer' data-aos = 'fade-up'>
+  <br/>
+  <br/>
 <h1>Technologies unlocked</h1>
 <br/>
 <h4>Language: </h4>Java, JavaScript (ES6+)

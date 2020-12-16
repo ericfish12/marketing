@@ -216,6 +216,38 @@ var Dota = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
+/***/ "./component/AboutMe.js":
+/*!******************************!*\
+  !*** ./component/AboutMe.js ***!
+  \******************************/
+/*! exports provided: AboutMe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutMe", function() { return AboutMe; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var AboutMe = function AboutMe() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "data-aos": "fade-up"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "ProjectsTitle"
+  }, "AboutMe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "AboutMeContaniner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "intro",
+    "class": "IntroLeft"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "me2.jpeg"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "IntroRight"
+  }, "This guy graduated from Dalian Polytechnic University, his major was Information and Computation Science. After graduation, he worked as a buyer in a international trading company for three years and ran a pizza restaurant for another three years. Four years ago, he came to United State to start a new life. He learned English and enhanced Computer Science skills at Nassau Community College.Recently, he wanted to learn more and build actual projects instead of only acedamic which then led him to enroll in a 17 weeks immersive full-stack program in Fullstack Academy. Now he is ready to start his next journey as a software engineer in a company that allows him to contribute and learn in equal parts.")));
+};
+
+/***/ }),
+
 /***/ "./component/Contact.js":
 /*!******************************!*\
   !*** ./component/Contact.js ***!
@@ -373,7 +405,9 @@ var Contact = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         "data-aos": "fade-up"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "ProjectsTitle"
+      }, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         onSubmit: this.handleSubmit
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "contactMe",
@@ -537,43 +571,39 @@ var GoalHero = /*#__PURE__*/function (_React$Component) {
 
 $(function () {
   var btn = $(".GoalHero ol li");
-  var oul = $('.GoalHero .GoalHeroContainer'); // btn.click(function(){
-  //    $(this).attr("class",'GoalHeroActive').siblings().attr("class","")
-  //    oul.animate({
-  //        left:$(this).index()*-150
-  //    },500)
-  // })
-  // siblings()
+  var oul = $(".GoalHero .GoalHeroContainer"); //set a timer auto roll
 
   var currentPng = 0;
   var timer = setInterval(function () {
     currentPng++;
     tab();
 
-    if ($('.ol .GoalHeroActive').next().attr('k') == undefined) {
-      $('.ol div').first().attr('class', "GoalHeroActive").siblings().attr('class', "");
-    } else $('.ol .GoalHeroActive').next().attr('class', "GoalHeroActive").siblings().attr('class', "");
+    if ($(".ol .GoalHeroActive").next().attr("k") == undefined) {
+      $(".ol div").first().attr("class", "GoalHeroActive").siblings().attr("class", "");
+    } else $(".ol .GoalHeroActive").next().attr("class", "GoalHeroActive").siblings().attr("class", "");
 
-    console.log($('.ol .GoalHeroActive').attr('k'));
-  }, 2000);
-  $('.ol div').click(function () {
-    $(this).attr('class', "GoalHeroActive").siblings().attr('class', "");
-    currentPng = $(this).attr('k');
-    var whichOne = $(this).attr('k');
+    console.log($(".ol .GoalHeroActive").attr("k"));
+  }, 2000); //click the one
+
+  $(".ol div").click(function () {
+    $(this).attr("class", "GoalHeroActive").siblings().attr("class", "");
+    currentPng = $(this).attr("k");
+    var whichOne = $(this).attr("k");
     oul.animate({
       left: whichOne * -240
     }, 500, function () {
       if (currentPng == 13) {
         currentPng = 0;
-        oul.css('left', 0);
+        oul.css("left", 0);
       }
     });
-  });
-  $('#leftArrow').click(function () {
+  }); //click the left arrow
+
+  $("#leftArrow").click(function () {
     if (currentPng != 0) {
       currentPng--;
-      $('.ol .GoalHeroActive').prev().attr('class', "GoalHeroActive").siblings().attr('class', "");
-      var moveToWhich = $('.ol .GoalHeroActive').attr('k');
+      $(".ol .GoalHeroActive").prev().attr("class", "GoalHeroActive").siblings().attr("class", "");
+      var moveToWhich = $(".ol .GoalHeroActive").attr("k");
       console.log(moveToWhich);
       oul.animate({
         left: moveToWhich * -240
@@ -582,32 +612,34 @@ $(function () {
         // oul.css('left',0)}
       });
     }
-  });
-  $('#rightArrow').click(function () {
+  }); //click the right arrow
+
+  $("#rightArrow").click(function () {
     if (currentPng != 12) {
       currentPng++;
-      $('.ol .GoalHeroActive').next().attr('class', "GoalHeroActive").siblings().attr('class', "");
-      var moveToWhich = $('.ol .GoalHeroActive').attr('k');
+      $(".ol .GoalHeroActive").next().attr("class", "GoalHeroActive").siblings().attr("class", "");
+      var moveToWhich = $(".ol .GoalHeroActive").attr("k");
       console.log(moveToWhich);
       oul.animate({
         left: moveToWhich * -240
       }, 200, function () {});
     }
-  });
-  $('.GoalHero,.ol').mouseenter(function () {
+  }); //mouse over
+
+  $(".GoalHero,.ol").mouseenter(function () {
     clearInterval(timer);
   }).mouseleave(function () {
     timer = setInterval(function () {
       currentPng++;
       tab();
 
-      if ($('.ol .GoalHeroActive').next().attr('k') == undefined) {
-        $('.ol div').first().attr('class', "GoalHeroActive").siblings().attr('class', "");
-      } else $('.ol .GoalHeroActive').next().attr('class', "GoalHeroActive").siblings().attr('class', "");
+      if ($(".ol .GoalHeroActive").next().attr("k") == undefined) {
+        $(".ol div").first().attr("class", "GoalHeroActive").siblings().attr("class", "");
+      } else $(".ol .GoalHeroActive").next().attr("class", "GoalHeroActive").siblings().attr("class", "");
 
-      console.log($('.ol .GoalHeroActive').attr('k'));
+      console.log($(".ol .GoalHeroActive").attr("k"));
     }, 2000);
-  });
+  }); //auto function
 
   function tab() {
     oul.animate({
@@ -615,7 +647,7 @@ $(function () {
     }, 500, function () {
       if (currentPng == 13) {
         currentPng = 0;
-        oul.css('left', 0);
+        oul.css("left", 0);
       }
     });
   }
@@ -643,16 +675,18 @@ var $ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 var Head = function Head() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "tennisTable"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "MePhotoBox"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     "class": "MePhoto",
     src: "me.jpeg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "aboutMe"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "daddy"
   }, "FULL-STACK SOFTWARE ENGINEER & WEB DEVELOPER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "HeadFont"
-  }, " Shan Jiang(Fish) "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Also a tennis player, a pizza maker, a pop singer, a racing driver, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "a traveller..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, " Shan Jiang(Fish) "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Also a tennis player, a pizza maker, a pop singer, a racing driver, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "a traveller..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "GitEmail"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "mailto:ericfish1221@gmail.com?subject=HELLO!"
@@ -666,11 +700,7 @@ var Head = function Head() {
     href: "https://github.com/ericfish12"
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "github.png"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tennis"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tennis2"
-  }));
+  })))));
 };
 
 /***/ }),
@@ -700,8 +730,9 @@ var Projects = function Projects() {
     "class": "BigProjectsTable",
     "data-aos": "fade-up"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "GoalHeroLeft",
-    "data-aos": "fade-left"
+    className: "ProjectsContainer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "GoalHeroLeft"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroText"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "GoalHero"), "Goal Hero is a mobile game/lifestyle app. The main purpose of Goal Hero is to motivate users to complete goals for themselves, while also playing a game. A user can play as a hero and fight against a monster to unlock new and stronger heroes. To get strong enough to defeat the monster, the user must complete goals they set for themself. Tech Used: React Native, Expo, React Native Game Engine, Express, Heroku, Matter.js, PostgreSQL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -711,11 +742,11 @@ var Projects = function Projects() {
   }, "DEMO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://github.com/GoalHero/GoalHero"
   }, "GITHUB"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "GoalHeroRight",
-    "data-aos": "fade-right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GoalHero__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "CheeseLeft",
-    "data-aos": "fade-left"
+    "class": "GoalHeroRight"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GoalHero__WEBPACK_IMPORTED_MODULE_2__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ProjectsContainer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "CheeseLeft"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroText"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Grace Cheese Prime"), "A basic e-commerce website that sells cheeses. Developed with JavaScript, React, Redux, Express and PostgreSQL. Designed and implemented a simple user experience to view and purchase cheeses.Used conventional Rest API and git workflow to manage team development."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -725,24 +756,10 @@ var Projects = function Projects() {
   }, "DEMO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://github.com/2008-FSA-Grace-Shopper-Cheese/GraceShopper"
   }, "GITHUB"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "CheeseRight",
-    "data-aos": "fade-right"
+    "class": "CheeseRight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "cheesePrime.jpg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "intro",
-    "class": "IntroLeft",
-    "data-aos": "fade-up"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "me2.jpeg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "IntroRight",
-    "data-aos": "fade-up"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "GoalHeroText"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "AboutMe"), "This guy graduated from Dalian Polytechnic University, his major was Information and Computation Science. After graduation, he worked as a buyer in a international trading company for three years and ran a pizza restaurant for another three years. Four years ago, he came to United State to start a new life. He learned English and enhanced Computer Science skills at Nassau Community College.Recently, he wanted to learn more and build actual projects instead of only acedamic which then led him to enroll in a 17 weeks immersive full-stack program in Fullstack Academy. Now he is ready to start his next journey as a software engineer in a company that allows him to contribute and learn in equal parts.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "tennis3"
-  }));
+  }))));
 };
 
 /***/ }),
@@ -770,7 +787,7 @@ var Technologies = function Technologies() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "TechnologiesContainer",
     "data-aos": "fade-up"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Technologies unlocked"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Language: "), "Java, JavaScript (ES6+)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Frontend:"), " React,React-native, Redux, HTML, CSS, Jquery", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Backend: "), "Node.js, Express, Sequelize, PostgreSQL, Sockit.io", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "DevOps: "), "Heroku, Webpack, TDD (Mocha, Chai, Jasmine)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Tools:"), " npm, GitHub, GIT, Visual Studio Code, Postman, Postico, Eclipse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Technologies unlocked"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Language: "), "Java, JavaScript (ES6+)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Frontend:"), " React,React-native, Redux, HTML, CSS, Jquery", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Backend: "), "Node.js, Express, Sequelize, PostgreSQL, Sockit.io", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "DevOps: "), "Heroku, Webpack, TDD (Mocha, Chai, Jasmine)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Tools:"), " npm, GitHub, GIT, Visual Studio Code, Postman, Postico, Eclipse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: _public_Resume_pdf__WEBPACK_IMPORTED_MODULE_1__["default"]
   }, "View Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: _public_Resume_pdf__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -805,6 +822,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _component_Projects__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./component/Projects */ "./component/Projects.js");
 /* harmony import */ var _component_Technologies__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./component/Technologies */ "./component/Technologies.js");
 /* harmony import */ var _component_Contact__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./component/Contact */ "./component/Contact.js");
+/* harmony import */ var _component_AboutMe__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./component/AboutMe */ "./component/AboutMe.js");
 
 
 
@@ -812,6 +830,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var $ = jquery__WEBPACK_IMPORTED_MODULE_4___default.a;
+
 
 
 
@@ -841,7 +860,9 @@ react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEB
   className: "nav-item"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "#contactMe"
-}, "Contact")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Head__WEBPACK_IMPORTED_MODULE_7__["Head"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Projects__WEBPACK_IMPORTED_MODULE_8__["Projects"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Technologies__WEBPACK_IMPORTED_MODULE_9__["Technologies"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Contact__WEBPACK_IMPORTED_MODULE_10__["Contact"], null)), document.getElementById("app") // make sure this is the same as the id of the div in your index.html
+}, "Contact")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Head__WEBPACK_IMPORTED_MODULE_7__["Head"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+  className: "ProjectsTitle"
+}, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Projects__WEBPACK_IMPORTED_MODULE_8__["Projects"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_AboutMe__WEBPACK_IMPORTED_MODULE_11__["AboutMe"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Technologies__WEBPACK_IMPORTED_MODULE_9__["Technologies"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Contact__WEBPACK_IMPORTED_MODULE_10__["Contact"], null)), document.getElementById("app") // make sure this is the same as the id of the div in your index.html
 );
 var header = document.getElementsByTagName("header")[0]; // We're interested in the first element
 
@@ -862,25 +883,28 @@ var scrollActions = function scrollActions() {
 window.addEventListener("scroll", function () {
   window.requestAnimationFrame(scrollActions);
 }); // scrollActions();
-
-var ll = 60;
-var ll2 = 60;
-var tt = 4;
-setInterval(function () {
-  var l = $('.tennis').offset().left + ll;
-  var l2 = $('.tennis2').offset().left + ll2; //  let t = $('.tennis').offset().top+tt
-
-  $('.tennis').css('left', "".concat(l, "px"));
-  $('.tennis2').css('left', "".concat(l2, "px"));
-  $('.tennis3').css('left', "".concat(l2, "px")); // .css('top',`${t}px`)
-  // if( $('.tennis').offset().left>=1444)
-  // $('.tennis').css('left','1000px')
-
-  if ($('.tennis').offset().left >= 666 || $('.tennis').offset().left <= 0) ll = 0 - ll;
-  if ($('.tennis2').offset().left >= 666 || $('.tennis2').offset().left <= 0) ll2 = 0 - ll2; // if( $('.tennis').offset().top>=700 ||$('.tennis').offset().top<=0)
-  // tt=0-tt
-  //console.log($('.tennis').offset().left)
-}, 20); // $(()=>{
+// let ll=60;
+// let ll2=60;
+// let tt =4;
+// setInterval(function (){
+//   let l = $('.tennis').offset().left+ll
+//   let l2 = $('.tennis2').offset().left+ll2
+//   //  let t = $('.tennis').offset().top+tt
+// $('.tennis').css('left',`${l}px`)
+// $('.tennis2').css('left',`${l2}px`)
+// $('.tennis3').css('left',`${l2}px`)
+// // .css('top',`${t}px`)
+// // if( $('.tennis').offset().left>=1444)
+// // $('.tennis').css('left','1000px')
+// if( $('.tennis').offset().left>=666  ||$('.tennis').offset().left<=0)
+// ll=0-ll
+// if( $('.tennis2').offset().left>=666  ||$('.tennis2').offset().left<=0)
+// ll2=0-ll2
+// // if( $('.tennis').offset().top>=700 ||$('.tennis').offset().top<=0)
+// // tt=0-tt
+// //console.log($('.tennis').offset().left)
+// },20)
+// $(()=>{
 // //alert('weagewg')
 //   $('div').fadeOut(20000)
 // })
@@ -938,7 +962,7 @@ document.addEventListener("scroll", function () {
   group.each(function () {
     // if ($(this).offset()<600)
     // $(this).hide().show(2)
-    if ($(window).scrollTop() >= 2999) $('div').css("border", "4px solid red");
+    if ($(window).scrollTop() >= 3999) $('div').css("border", "4px solid red");
 
     if ($(this).offset().top - $(window).scrollTop() < 600) {//   $("img").hide(1000)
       //  $(this).show(22222)

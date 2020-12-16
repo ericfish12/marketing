@@ -1,12 +1,10 @@
-
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  width:100vw;
- overflow-x: hidden;
+  width: 100vw;
+  overflow-x: hidden;
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -21,17 +19,21 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 3vw;
   font-weight: normal;
 }
 
-h4{
-  display:inline;
+h2 {
+  font-size: 2vw;
+  font-weight: normal;
 }
 
+h4 {
+  display: inline;
+}
 
-  .daddy{
-    overflow: hidden;
+.daddy {
+  overflow: hidden;
   border-right: solid rgb(203, 15, 93);
   white-space: nowrap;
   animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
@@ -40,28 +42,28 @@ h4{
   font-weight: 500;
   letter-spacing: 0.01em;
   line-height: 0.9em;
-  }
+}
 
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgb(203, 15, 93);
-    }
+  to {
+    width: 100%;
   }
+}
 
-  /* .item {
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(203, 15, 93);
+  }
+}
+
+/* .item {
     width: 200px;
     height: 200px;
     margin: 50px auto;
@@ -71,292 +73,288 @@ h4{
     color: #FFF;
     font-size: 3em;
   } */
-  
-  /* div ol{
+
+/* div ol{
     border: 4px solid salmon
   } */
 
-.GoalHero{
-  width:240px; height:470px;position: relative;
-   margin-left:85px ;
-   overflow: hidden;
+.GoalHero {
+  width: 240px;
+  height: 470px;
+  position: relative;
+  /* margin-left: 85px; */
+  overflow: hidden;
 }
-.ol{
+.ol {
   display: flex;
   justify-content: space-between;
-  margin-left:85px ;
-  height:1.8%;
-  width:18%;
+  /* margin-left: 85px; */
+  /* height: 1.8%; */
+  width: 244px;
   position: absolute;
-  border:4px solid darkblue;
-   z-index: 2;
+ 
+  /* border: 4px solid darkblue; */
+  z-index: 2;
 }
 
-.ol div{
-
-border-radius: 50%;
-  height:12px;
-  width:12px;
+.ol div {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
   /* background: seashell; */
-  border:1px solid
-  cadetblue
+  border: 1px solid cadetblue;
 }
- .GoalHeroActive{
-    
-  background:cornflowerblue;position: relative;  
-} 
-
-.GoalHeroContainer{ width:4500px;height:470px;
-  position: absolute; top:0; left :0;
-   z-index: 1;
-   /* border-radius: 2%; */
-}
-.GoalHeroContainer div{ 
-width: 240px;height:470px; display: inline-block;
- /* float:top; */
-}
-.GoalHeroContainer img{
-   /* float:top; */
-  width:240px;height:470px ; 
-  border-radius: 6% 6% 4% 4%;
-  
-}
-
-
-.tennisTable{
- 
-  height: 100vh; 
-display: flex;
-  
-  width:100vw;
-  margin:0px auto;
-   /* margin-top: 0px; */
-
-/* width: 1434px;
-height:722px; */
-
-  position: static;
-
- 
-
-}
-
-.MePhoto{
-  margin:77px auto;
-  left:10px;
-/* height:77vh; */
-/* max-height: 35em; */
-
-width:22%;
-
-
+.GoalHeroActive {
+  background: cornflowerblue;
   position: relative;
+}
+
+.GoalHeroContainer {
+  width: 4500px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* border-radius: 2%; */
+}
+.GoalHeroContainer div {
+  width: 240px;
+  height: 470px;
+  display: inline-block;
+  /* float:top; */
+}
+.GoalHeroContainer img {
+  /* float:top; */
+  width: 240px;
+  height: 470px;
+  border-radius: 6% 6% 4% 4%;
+}
+
+.tennisTable {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100vw;
+
+  /* margin-top: 0px; */
+
+  /* width: 1434px;
+height:722px; */
+}
+.MePhotoBox {
+  /* flex-shrink: 1; */
+  width: 22%;
+  /* margin:77px auto; */
+  height: 36vw;
+  position: relative;
+}
+
+.aboutMe {
+  /* left:2%;  */
+
+  width: 75%;
+  position: relative;
+  height: 36vw;
+  /* top:5.8vw; */
+  z-index: 1;
+  /* flex-grow: 2 */
+
+  /* border:3px solid gold */
+}
+.MePhoto {
+  width: 100%;
+
+  /* height:77vh; */
+  /* max-height: 35em; */
+
+  margin: 0;
+
+  /* position: relative; */
   /* right:77px; */
-/* left:1084px;  */
-/* width:24%; */
-z-index:2;
-
-
+  /* left:1084px;  */
+  /* width:24%; */
+  z-index: 2;
 }
 
-.tennis{
-  top:333px;
-  width:166px;
-  height:2px;
-background-color: coral;
-border-radius: 50%;
-position: absolute;
+.tennis {
+  top: 333px;
+  width: 166px;
+  height: 2px;
+  background-color: coral;
+  border-radius: 50%;
+  position: absolute;
 }
 
-.tennis2{
-  top:100%;
-  width:866px;
-  height:4px;
-background-color: coral;
-border-radius: 50%;
-position: absolute;
+.tennis2 {
+  top: 100%;
+  width: 866px;
+  height: 4px;
+  background-color: coral;
+  border-radius: 50%;
+  position: absolute;
 }
 
-.tennis3{
-  top:1111px;
-  width:866px;
-  height:4px;
-background-color: coral;
-border-radius: 50%;
-position: absolute;
+.tennis3 {
+  top: 1111px;
+  width: 866px;
+  height: 4px;
+  background-color: coral;
+  border-radius: 50%;
+  position: absolute;
 }
 
-
-
-
-
-
-.GitEmail{
-display: flex;
-flex-direction: row;
-justify-content:space-around;
-max-width:35%;
-  height:20%;
+.GitEmail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 35%;
+  height: 20%;
   /* border: 4px peru; */
 }
-.GitEmail img{
-  background-color:wheat;
-border-radius: 50%;
-  width:70px;
-  height:70px;
-
+.GitEmail img {
+  background-color: wheat;
+  border-radius: 50%;
+  width: 50%;
+  height: 65%;
 }
 .GitEmail img:hover {
   transform: scale(1.2);
 }
 
-i{
+i {
   transform: scale(2);
 }
 
-
-.aboutMe{
-left:2%;
-  width: 80%;
-position: relative;
-height:36vw;
-top:5.8vw;
-z-index: 1;
-
-
-/* border:3px solid gold */
+.HeadFont {
+  font-size: 5vw;
 }
 
-
-.HeadFont{
-  font-size:5em;
+.ProjectsTitle {
+  text-align: center;
+  font-size: 4vw;
 }
-
-.BigProjectsTable{
-
+.BigProjectsTable {
   width: 100vw;
-    /* height: 250vh; */
-/* top:85vh; */
-    background-color: white;
-    /* border:4px solid yellow; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
- 
+  /* height: 250vh; */
+  /* top:85vh; */
+
+  /* border:4px solid yellow; */
+  display: flex;
+
+  flex-direction: column;
 }
-.GoalHeroLeft{
+.ProjectsContainer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+  position: relative;
+}
+
+.GoalHeroLeft {
   align-items: center;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   /* width: 50vw; */
-    /* height: 70vh; */
+  /* height: 70vh; */
   /* border:4px solid burlywood; */
   /* flex-shrink: inherit; */
-  display:flex;
+  /* display:flex; */
 }
-.GoalHeroRight{
- 
-  width: 39vw;
-    height: 70vh;
+.GoalHeroRight {
+  /* width: 39vw; */
+  /* height: 70vh; */
   /* border:4px solid burlywood; */
   /* flex-shrink: inherit; */
 }
-.GoalHeroText{
-  
+.GoalHeroText {
+  width: 70%;
   /* margin: auto; */
- font-size: 22px;
-  max-width:700px;
+  font-size: 1.5vw;
+  /* max-width:700px; */
   /* height:240px; */
   /* border:1px solid goldenrod */
 }
-.GoalHeroDemo{
-  width:50%;
+.GoalHeroDemo {
+  width: 40%;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
-    /* width:450px;
+  justify-content: space-around;
+  /* width:450px;
     height:90px; */
-   
-
 }
-.GoalHeroDemo a{
-  font-size: 29px;
-  border:4px solid black;
+
+.GoalHeroDemo a {
+  font-size: 2vw;
+  /* font-weight: bold; */
+  border: 4px solid black;
   border-radius: 2%;
-  height:36px;
+  height: 36px;
   text-decoration: none;
-  color:black;
- 
+  color: black;
+  text-justify: auto;
+  margin: 20px;
+  padding: 20px, 10px, 30px, 10px;
 }
-.GoalHeroDemo a:hover{
+.GoalHeroDemo a:hover {
   background-color: black;
-  color:white;
+  color: white;
 }
 
-
-
-
-
-.CheeseLeft{
- 
+.CheeseLeft {
   align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   /* width: 50vw; */
-    /* height: 70vh; */
+  /* height: 70vh; */
   /* border:4px solid burlywood; */
   /* flex-shrink: inherit; */
-  display:flex;
-
-
+  /* display:flex; */
 }
 
-.CheeseRight{
- 
-  width: 39vw;
-    height: 60vh;
+.CheeseRight {
+  width: 30vw;
+  height: 35vh;
   /* border:4px solid burlywood;
    */
-
 }
-.CheeseRight img{
- margin:40px auto;
-  width:400px;
-  height:250px;
+.CheeseRight img {
+  width: 100%;
+  /* height:100%; */
 }
 
-
-.IntroLeft{
-  margin-left:120px;
-  width: 29vw;
-  height: 60vh;
-/* border:4px solid burlywood; */
-
-
+.AboutMeContaniner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  width: 100vw;
 }
+.IntroLeft {
+  width: 20vw;
 
-.IntroRight{
- 
-  width: 59vw;
-    height: 60vh;
   /* border:4px solid burlywood; */
-  
-
 }
-.IntroLeft img{
-  margin:29px auto;
-   width:300px;
-   height:350px;
-   border-radius: 4%;
- }
 
+.IntroRight {
+  width: 60vw;
+  font-size: 2vw;
+  /* border:4px solid burlywood; */
+}
+.IntroLeft img {
+  width: 100%;
+
+  border-radius: 4%;
+}
 
 /* 
 .btn-2 {
@@ -411,7 +409,7 @@ width: 70%;
 } */
 
 header {
-  top:0px;
+  top: 0px;
   display: flex;
   position: fixed;
   margin: 0 4em;
@@ -447,8 +445,8 @@ header nav {
   margin: 0 1.5em 0 0;
 }
 
-
-.nav-item a,.logo a {
+.nav-item a,
+.logo a {
   font-size: 1.3em;
   color: #fff;
   text-decoration: none;
@@ -461,89 +459,74 @@ header nav {
   box-shadow: #d3d3d3;
 }
 
-.TechnologiesContainer{
-text-align: center;
-font-size: 22px;;
-  width:100vw;
-  height:100vh;
-  border:4px solid red;
+.TechnologiesContainer {
+  text-align: center;
+  font-size: 22px;
+  width: 100vw;
+  height: 100vh;
 }
-.TechnologiesContainer a{
-  font-size: 29px;
-  border:4px solid black;
+.TechnologiesContainer a {
+  font-size: 2vw;
+  font-weight: bold;
+  border: 4px solid black;
   border-radius: 2%;
-  height:36px;
+  height: 36px;
   text-decoration: none;
-  color:black;
-  margin:20px;
+  color: black;
+  margin: 20px;
   padding: 10px;
 }
-.TechnologiesContainer a:hover{
+.TechnologiesContainer a:hover {
   background-color: black;
-  color:white;
+  color: white;
 }
 
-.ContactContainer{
+.ContactContainer {
+  width: 100vw;
+  height: 100vh;
 
-  width:100vw;
-  height:100vh;
-  border:4px solid yellow;
-display: flex;
-flex-wrap: wrap;
-align-items: stretch ;
-position: relative;
-
-
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
 }
-.ContactContainer label{
+.ContactContainer label {
   display: block;
-font-size: 33px;
-margin-top:66px;  
-
- 
+  font-size: 33px;
+  margin-top: 66px;
 }
-.ContactContainer button{
-  margin-top:40px;
-  margin-left:50px;
-  width:125px;
-  height:38px;
-
+.ContactContainer button {
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 125px;
+  height: 38px;
+  font-weight: bold;
 }
-.ContactLeft{
-  margin-left:300px;
-  width:20vw;
-  height :80vh;
+.ContactLeft {
   /* border:1px solid fuchsia */
 }
 
-
-
-.ContactRight{
-  width:45vw;
-  height:80vh;
+.ContactRight {
   /* border:1px solid fuchsia */
 }
 
-
-#inputName{
- /* border:3px solid peru; */
- width:250px;
- height:40px;
-}
-
-#inputMessage{
+#inputName {
   /* border:3px solid peru; */
-  width:500px;
-  height:250px;
- 
-  font-size:18px;
-  color:#333;
-  font-family:sans-serif;
-  position:relative;
-
+  width: 250px;
+  height: 40px;
 }
-#inputEmail{
-  width:250px;
- height:40px;
+
+#inputMessage {
+  /* border:3px solid peru; */
+  width: 500px;
+  height: 250px;
+
+  font-size: 18px;
+  color: #333;
+  font-family: sans-serif;
+  position: relative;
+}
+#inputEmail {
+  width: 250px;
+  height: 40px;
   /* border:3px solid peru; */
 }
