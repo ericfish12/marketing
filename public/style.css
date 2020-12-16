@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 2em;
   font-weight: normal;
 }
 
@@ -133,9 +133,9 @@ h4 {
 
 .tennisTable {
   align-items: center;
-  height: 100vh;
+margin-top:4%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100vw;
 
@@ -155,7 +155,7 @@ height:722px; */
 .aboutMe {
   /* left:2%;  */
 
-  width: 75%;
+  width: 65%;
   position: relative;
   height: 36vw;
   /* top:5.8vw; */
@@ -217,7 +217,7 @@ height:722px; */
 .GitEmail img {
   background-color: wheat;
   border-radius: 50%;
-  width: 50%;
+  width: 60%;
   height: 65%;
 }
 .GitEmail img:hover {
@@ -229,7 +229,7 @@ i {
 }
 
 .HeadFont {
-  font-size: 5vw;
+  font-size: 3em;
 }
 
 .ProjectsTitle {
@@ -463,7 +463,7 @@ header nav {
   text-align: center;
   font-size: 22px;
   width: 100vw;
-  height: 100vh;
+  
 }
 .TechnologiesContainer a {
   font-size: 2vw;

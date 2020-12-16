@@ -51,6 +51,7 @@ else alert('Please use a valid Email')
   render() {
     return (
         <div data-aos = 'fade-up'>
+          <br/>  <br/>  <br/>  <br/>  <br/>     <br/>  <br/>  <br/>  <br/>  <br/>
      <h1 className = 'ProjectsTitle'>Contact</h1>
         <form onSubmit={this.handleSubmit}>
              <div id='contactMe' class="ContactContainer">
