@@ -248,16 +248,16 @@ i {
 }
 .ProjectsContainer {
   display: flex;
-  flex-wrap: wrap-reverse;
-  flex-direction: row;
+ 
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-around;
+
   width: 100%;
 
-  position: relative;
 }
 
 .GoalHeroLeft {
+  margin:2vw;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -291,19 +291,21 @@ i {
     height:90px; */
 }
 
-.GoalHeroDemo a {
-  font-size: 2vw;
+.ProjectsContainer a {
+  position: relative;
+text-align: center;
+  font-size: 1.5em;
   /* font-weight: bold; */
   border: 4px solid black;
   border-radius: 2%;
   height: 36px;
   text-decoration: none;
   color: black;
-  text-justify: auto;
+  
   margin: 20px;
-  padding: 20px, 10px, 30px, 10px;
+  padding: 20px,20px;
 }
-.GoalHeroDemo a:hover {
+.ProjectsContainer a:hover {
   background-color: black;
   color: white;
 }
