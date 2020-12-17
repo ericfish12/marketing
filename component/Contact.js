@@ -54,44 +54,42 @@ else alert('Please use a valid Email')
           <br/>  <br/>  <br/>  <br/>  <br/>     <br/>  <br/>  <br/>  <br/>  <br/>
      <h1 className = 'ProjectsTitle'>Contact</h1>
         <form onSubmit={this.handleSubmit}>
+
+
+
+
              <div id='contactMe' class="ContactContainer">
          
-        <div class = 'ContactLeft'>
-          <label htmlFor="Name">Name:</label>
-          <input
-          id='inputName'
-            type="text"
-            name="name"
+             <div class="row">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="name" aria-label="First name" name="name"
             value={this.state.name}
             onChange={this.handleChange}
-            required="required"
-          />
-
-          <label htmlFor="email">Email:</label>
-          <input
-          id='inputEmail'
-            type="text"
-            name="email"
+            required="required"/>
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="email" aria-label="Last name" name="email"
             value={this.state.email}
-            onChange={this.handleChange}
-          />
-          <br/>
-            <button type="submit">Submit</button>
+            onChange={this.handleChange}/>
+  </div>
 </div>
-<div class = 'ContactRight'>
-          <label htmlFor="Message">Message:</label>
-          <textarea
-          id= 'inputMessage'
-        
-            type="text"
+
+<br/>
+<div class="mb-3">
+ 
+  <textarea class="form-control"placeholder="message" id="exampleFormControlTextarea1" rows="3"   type="text"
             name="message"
             value={this.state.message}
-            onChange={this.handleChange}
-          />
+            onChange={this.handleChange}></textarea>
 </div>
-        
+          
+<button type="submit" className="btn btn-dark">Submit</button>
+<br/><br/><br/><br/>
           </div>
+
         </form>
+
+
       </div>
     );
   }

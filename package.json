@@ -10,8 +10,7 @@
     "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./Server/server.js",
-  
-    "seed":"node ./Server/seed.js"
+    "seed": "node ./Server/seed.js"
   },
   "author": "",
   "license": "ISC",
@@ -31,6 +30,7 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "bootstrap-icons": "^1.2.1",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "jquery-plugin": "0.0.0-ignored",
@@ -39,6 +39,7 @@
     "popper.js": "^1.16.1",
     "puppeteer": "^5.3.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "sequelize": "^6.3.5"

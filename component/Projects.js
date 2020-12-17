@@ -25,13 +25,15 @@ export const Projects = () => {
         </div>
       </div>
       <div class="GoalHeroRight" >
+        <br/>     <br/>     <br/>     <br/>
         <GoalHero />
       </div>
       </div>
-      <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+      <br/> <br/> 
       <div className = 'ProjectsContainer'>
       <div class="CheeseLeft"  >
         <div class="GoalHeroText">
+        <br/> <br/> 
           <h3>Grace Cheese Prime</h3>
           A basic e-commerce website that sells cheeses. Developed with JavaScript, React, Redux, Express and PostgreSQL. Designed and implemented a simple user experience to view and purchase cheeses.Used conventional Rest API and git workflow to manage team development.
        

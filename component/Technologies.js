@@ -6,9 +6,9 @@ const $ = JQuery.default;
 export const Technologies = () => {
   return (
 <div class = 'TechnologiesContainer' data-aos = 'fade-up'>
-  <br/>
-  <br/>
-<h1>Technologies unlocked</h1>
+  
+  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>
+<h1 className='ProjectsTitle'>Technologies unlocked</h1>
 <br/>
 <h4>Language: </h4>Java, JavaScript (ES6+)
 <br/>
@@ -23,7 +23,8 @@ export const Technologies = () => {
 <br/>
 <br/>
 <br/>
-<h1>Resume</h1>
+<h1 className='ProjectsTitle'>Resume</h1>
+<br/>  <br/>  
 <a href={Resume}>View Resume</a>
 <a   href={Resume}
           download>Download Resume</a>
