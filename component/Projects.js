@@ -5,7 +5,10 @@ const $ = JQuery.default;
 
 export const Projects = () => {
   return (
-    <div id='projects' class="BigProjectsTable" data-aos="fade-up">
+
+<div data-aos="fade-up">
+    <h1 className = 'ProjectsTitle'>Project</h1>
+    <div id='projects' class="BigProjectsTable">
       <div className = 'ProjectsContainer'>
       <div class="GoalHeroLeft" >
         <div class="GoalHeroText">
@@ -57,7 +60,7 @@ export const Projects = () => {
 
 
 
-
+</div>
     </div>
   );
 };

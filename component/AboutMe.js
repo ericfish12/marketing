@@ -3,7 +3,7 @@ import React from 'react'
 export const AboutMe = ()=>{
     return(
 <div data-aos = 'fade-up'>
-<br/>  <br/><br/>  <br/><br/>  <br/>
+<br/>  <br/><br/>  
         <h1 className ='ProjectsTitle'>AboutMe</h1>
         <div className='AboutMeContaniner'>
  
