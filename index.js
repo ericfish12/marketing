@@ -207,7 +207,7 @@ document.addEventListener("scroll", function () {
     // if ($(this).offset()<600)
     // $(this).hide().show(2)
 
-    if ($(window).scrollTop() >= 1999) $('div').css("border", "4px solid red");
+    if ($(window).scrollTop() >= 3999) $('div').css("border", "4px solid red");
 
     if ($(this).offset().top - $(window).scrollTop() < 600) {
       //   $("img").hide(1000)

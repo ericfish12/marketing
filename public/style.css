@@ -353,10 +353,11 @@ i {
 }
 
 .CheeseRight {
-  /* width: 30vw; */
+  width: 50vw;
 
+/* 
 width:400px;
-height:285px;
+height:285px; */
   /* border:4px solid burlywood;
    */
 }
