@@ -27,6 +27,24 @@ const Messages = db.define('Messages',{
     }
 })
 
+const TodoLists = db.define('todolists',{
+    userId:{
+        type:Sequelize.INTEGER,
+        
+        defaultValue:1
+    },
+    completed:{
+        type:Sequelize.BOOLEAN,
+       
+        defaultValue:false
+      
+    },
+    title:{
+        type:Sequelize.TEXT,
+        allowNull:false,
+    }
+})
+
 
 async function seed() {
     await db.sync({force: true})
@@ -37,6 +55,7 @@ async function seed() {
 module.exports = {
     db,
     Messages,
+    TodoLists
   };
   
 

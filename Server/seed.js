@@ -1,13 +1,25 @@
 'use strict';
 
-const {db} = require('./db.js');
+const {db,TodoLists} = require('./db.js');
 
 
 async function seed() {
   await db.sync({ force: true });
   console.log('db synced!');
 
-  
+  const todos = await Promise.all([
+    TodoLists.create({
+      userId: 2,
+      title: 'cody@email.com',
+      completed: true
+    }),
+    TodoLists.create({
+        userId: 3,
+        title: 'rgwerhwethewh',
+        completed: false
+    }),
+    TodoLists.create({  title: '235467687574635567857463245'})
+  ])
 
 
 

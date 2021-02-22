@@ -5,7 +5,9 @@ const morgan = require('morgan')
 
 // you'll of course want static middleware so your browser can request things like your 'bundle.js'
 app.use(morgan('dev'));
-
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.json())
   app.use(express.urlencoded({extended: true}))
