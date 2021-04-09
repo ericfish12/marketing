@@ -32,7 +32,7 @@ router.post('/messages',async(req,res,next)=>{
 router.get("/todos", async (req, res, next) => {
   try {
     const todos = await TodoLists.findAll({
-        order: [['id', 'ASC']]
+        order: [['updatedAt', 'ASC']]
     });
     res.json(todos);
   } catch (error) {
