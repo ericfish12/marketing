@@ -5,32 +5,55 @@ const $ = JQuery.default;
 
 export const Head = () => {
   return (
-    <div class="tennisTable">
+    <div className="tennisTable">
 
-      <div className = 'MePhotoBox'>
-       <img class='MePhoto' src='me.jpeg'/>
-       </div>
+      {/* <div className = 'MePhotoBox'>
+       <img class='MePhoto img-fluid' src='me.jpeg'/>
+       </div> */}
+<div className="card" >
+  <img src="me.jpeg" class="card-img-top" alt="me"/>
+   
+</div>
+
+
+
+
       {/* <img src='1.png' />  */}
       {/* <img src="coffee.jpeg" /> */}
-<div className = 'aboutMe'>
+<div className='aboutMe'>
 <br/> <br/>   <br/> <br/> 
-    <h2 className='daddy'>FULL-STACK SOFTWARE ENGINEER & WEB DEVELOPER</h2>
+<div style={{width:"111%"}}>
+    <h2 className='daddy'>FRONT-END WEB DEVELOPER</h2>
+    </div>
     <br/> <br/> 
-    <h1 className='HeadFont'> Shan Jiang(Fish) </h1>
-    <br/>
+    <h1 className='HeadFont'>  {'\u00A0\u00A0\u00A0\u00A0'} <a href ="mailto:fish.jiang12@gmail.com?subject=HELLO!"> <img src='email.png'/></a>   Fish Jiang </h1>
+    <br/>  <br/>
     
-   <h2> Also a tennis player, a pizza maker, a pop singer, a racing driver, <br/>a traveller...</h2>
-   <br/> <br/> 
-  <div className ='GitEmail'>
-   <a href ="mailto:ericfish1221@gmail.com?subject=HELLO!"> <img src='email.png'/></a>
-  
-   <a href ="https://www.linkedin.com/in/ericfish12/"> <img src='linkedin.png'/></a>
-   <a href ="https://github.com/ericfish12"> <img src='github.png'/></a>
+   <h2> 
+   <button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">improving</button>{'\u00A0'}  
 
-  </div>
+   <button type="button" class="btn btn-secondary" disabled data-bs-toggle="button" autocomplete="off">passionate</button>{'\u00A0'}  
+
+   <button type="button" class="btn btn-success" disabled data-bs-toggle="button" autocomplete="off">open-minded</button>{'\u00A0'}  
+
+   <button type="button" class="btn btn-danger" disabled data-bs-toggle="button" autocomplete="off">data-driven</button>{'\u00A0'}  
+
+   <button type="button" class="btn btn-warning" disabled data-bs-toggle="button" autocomplete="off">elegant</button>
+   {'\u00A0'}  
+   <button type="button" class="btn btn-info" disabled data-bs-toggle="button" autocomplete="off">creative</button>
+   {'\u00A0'}  
+   <button type="button" class="btn btn-dark" disabled data-bs-toggle="button" autocomplete="off">anticipate needs</button>{'\u00A0'}  
+     
+     
+  </h2>
+   <br/> <br/>  <br/> 
+  
 </div>
       {/* <div className="tennis"></div>
       <div className="tennis2"></div> */}
+
+
+      
     </div>
   );
 };

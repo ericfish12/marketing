@@ -231,19 +231,15 @@ __webpack_require__.r(__webpack_exports__);
 
 var AboutMe = function AboutMe() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "data-aos": "fade-up"
+    "data-aos": "fade-up",
+    id: "intro"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "ProjectsTitle"
   }, "AboutMe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "AboutMeContaniner"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "intro",
-    "class": "IntroLeft"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "me2.jpeg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "IntroRight"
-  }, "This guy graduated from Dalian Polytechnic University, his major was Information and Computation Science. After graduation, he worked as a buyer in a international trading company for three years and ran a pizza restaurant for another three years. Four years ago, he came to United State to start a new life. He learned English and enhanced Computer Science skills at Nassau Community College.Recently, he wanted to learn more and build actual projects instead of only acedamic which then led him to enroll in a 17 weeks immersive full-stack program in Fullstack Academy. Now he is ready to start his next journey as a software engineer in a company that allows him to contribute and learn in equal parts.")));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF 5+ years of experience in designing, implementing, and testing full-scale UI web applications.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Good experience in developing SPA using HTML5, CSS3, AngularJS, JavaScript, Angular 8, TypeScript, Bootstrap, AJAX, JSON, ECMAScript 6, and jQuery across various browsers and thereby achieving cross-browser compatibility.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Experience in working with Angular CLI, modules, services, templates, reactive forms and validations, authentication, directives, pipes, services and dependency injection to create a SPA.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Good amount of work done on NgRx to maintain the states of the application.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Decent experience on Improving Angular application\u2019s performance and security.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Good Experience in using the various JavaScript concepts like Prototypes, Closures, and Object-oriented features, Promises, etc.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Excellent working knowledge and thorough exposure on cross browser/cross device compatibility.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Decent experience in SQL, Stored Procedures, Functions, Views, Transactions, Constraints, Indexes, and Triggers with databases such as Oracle, MySQL, PostgreSQL, and MSSQL Server.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Experienced in all phases of usability testing including user-profiles and personals, task analysis, contextual research, test moderation, and reporting using Karma, and Jasmine.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Experience in developing Web Services to expose useful functionality to web users through SOAP and RESTful web service calls.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Good knowledge in Waterfall and Agile methodologies of the development process such as requirement analysis & definition, designing, coding, implementation, and testing.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Well experienced with ANT and Maven for builds and deployments to different environments.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Hands-on experience in software configuration/change control process and tools like Subversion (SVN), GIT.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  \u25CF Strong problem-solving, organizing, communication, and planning skills with the ability to work in a team environment.")));
 };
 
 /***/ }),
@@ -449,7 +445,7 @@ var Contact = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "submit",
         className: "btn btn-dark"
-      }, "Submit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))));
+      }, "Submit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null));
     }
   }]);
 
@@ -721,33 +717,70 @@ __webpack_require__.r(__webpack_exports__);
 var $ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 var Head = function Head() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "tennisTable"
+    className: "tennisTable"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "MePhotoBox"
+    className: "card"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    "class": "MePhoto",
-    src: "me.jpeg"
+    src: "me.jpeg",
+    "class": "card-img-top",
+    alt: "me"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "aboutMe"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "   ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "   ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      width: "111%"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "daddy"
-  }, "FULL-STACK SOFTWARE ENGINEER & WEB DEVELOPER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, "FRONT-END WEB DEVELOPER")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "HeadFont"
-  }, " Shan Jiang(Fish) "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Also a tennis player, a pizza maker, a pop singer, a racing driver, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "a traveller..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "GitEmail"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "mailto:ericfish1221@gmail.com?subject=HELLO!"
+  }, "  ", "\xA0\xA0\xA0\xA0", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "mailto:fish.jiang12@gmail.com?subject=HELLO!"
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "email.png"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.linkedin.com/in/ericfish12/"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "linkedin.png"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://github.com/ericfish12"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "github.png"
-  })))));
+  })), "   Fish Jiang "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-primary",
+    disabled: true,
+    "data-bs-toggle": "button",
+    autocomplete: "off"
+  }, "improving"), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-secondary",
+    disabled: true,
+    "data-bs-toggle": "button",
+    autocomplete: "off"
+  }, "passionate"), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-success",
+    disabled: true,
+    "data-bs-toggle": "button",
+    autocomplete: "off"
+  }, "open-minded"), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-danger",
+    disabled: true,
+    "data-bs-toggle": "button",
+    autocomplete: "off"
+  }, "data-driven"), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-warning",
+    disabled: true,
+    "data-bs-toggle": "button",
+    autocomplete: "off"
+  }, "elegant"), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-info",
+    disabled: true,
+    "data-bs-toggle": "button",
+    autocomplete: "off"
+  }, "creative"), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-dark",
+    disabled: true,
+    "data-bs-toggle": "button",
+    autocomplete: "off"
+  }, "anticipate needs"), "\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)));
 };
 
 /***/ }),
@@ -766,18 +799,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _GoalHero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GoalHero */ "./component/GoalHero.js");
-
 
 
 var $ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 var Projects = function Projects() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "data-aos": "fade-up"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    "data-aos": "fade-up",
+    id: "projects"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "ProjectsTitle"
   }, "Project"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "projects",
     "class": "BigProjectsTable"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ProjectsContainer"
@@ -785,31 +816,33 @@ var Projects = function Projects() {
     "class": "GoalHeroLeft"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroText"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "GoalHero"), "Goal Hero is a mobile game/lifestyle app. The main purpose of Goal Hero is to motivate users to complete goals for themselves, while also playing a game. A user can play as a hero and fight against a monster to unlock new and stronger heroes. To get strong enough to defeat the monster, the user must complete goals they set for themself. Tech Used: React Native, Expo, React Native Game Engine, Express, Heroku, Matter.js, PostgreSQL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "GoalHeroDemo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://expo.io/@ericfish/projects/GoalHero"
-  }, "DEMO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://github.com/GoalHero/GoalHero"
-  }, "GITHUB"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " GFI FaxMaker"), "The GFI FaxMaker Online administration dashboard allows you to graphically view your fax communications over time and drill down to send or received transmissions. It also gives you a breakdown of your international faxing history, a list of the top area codes used when you fax, and the fax numbers you have available. All of this information helps you determine if it\u2019s necessary to request additional fax numbers. Moreover, GFI FaxMaker Online shows how you are helping the environment on the \u201CTrees Saved\u201D section of the dashboard. Using an electronic online fax service helps reduce the amount of paper you use \u2013 which saves money and trees.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroRight"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "     ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "     ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "     ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GoalHero__WEBPACK_IMPORTED_MODULE_2__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ProjectsContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "CheeseLeft"
+    "class": "GoalHeroLeft"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "GoalHeroText"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Grace Cheese Prime"), "A basic e-commerce website that sells cheeses. Developed with JavaScript, React, Redux, Express and PostgreSQL. Designed and implemented a simple user experience to view and purchase cheeses.Used conventional Rest API and git workflow to manage team development."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "GoalHeroDemo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://grace-cheese-prime.herokuapp.com/"
-  }, "DEMO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://github.com/2008-FSA-Grace-Shopper-Cheese/GraceShopper"
-  }, "GITHUB"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "CheeseRight"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "cheesePrime.jpg"
-  })))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "   Management Dashboard"), "Insights into quality grades (CISQ, ISO 5055), automated function points, and structural integrity trends to enable objective decision-making, better IT investments, fact-based management of ADM vendors and internal teams. At-a-glance summary of your software health in terms of robustness, security, efficiency, changeability, transferability, and quality. Accurate sizing metrics that show what you have to manage and how far you've gotten. Heatmap to quickly find where you are at the highest risk. Trending analysis to benchmark performance over time. Fast facts on the evolution of your software.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "GoalHeroRight"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ProjectsContainer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "GoalHeroLeft"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "GoalHeroText"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "    Clarity PPM"), "Clarity PPM enables teams to communicate business outcomes across the organization, allowing stakeholders to agree on a common set of objectives. Automatically update project financials with the actual time spent on each task. Managers can see teams' start and finish dates, booking status, estimated time of completion, total allocations, and total actuals. Create a visual task list on the Clarity PPM (formerly CA Project Portfolio Management), task boards. It provides users with their process flow, assigns staff to tasks, and prioritizes work. Keep all team members in sync and share plans with other groups and executives. Clarity PPM\u2019s financial planning pages have been redesigned to mimic Microsoft Excel spreadsheets in both looks and feel. It provides one consolidated view of each employee\u2019s project queue and their schedule. Managers explore staffing options with telescoping and pinning features that replace outdated filtering and matching tools.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "GoalHeroRight"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ProjectsContainer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "GoalHeroLeft"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "GoalHeroText"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "       Inova for Pharma"), "Inova is the partnering platform for pharma companies to manage their opportunities more efficiently. They find all their partnering information in one place, track their deals and alliances easily and report on their pipeline and activities It has several features like Search Evaluation, Opportunities Tracking, Alliance Management, Reporting.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "GoalHeroRight"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)));
 };
 
 /***/ }),
@@ -826,27 +859,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Technologies", function() { return Technologies; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _public_Resume_pdf__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/Resume.pdf */ "./public/Resume.pdf");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+ // import Resume from '../public/Resume.pdf'
 
 
-
-var $ = jquery__WEBPACK_IMPORTED_MODULE_2___default.a;
+var $ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 var Technologies = function Technologies() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "class": "TechnologiesContainer",
     "data-aos": "fade-up"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "ProjectsTitle"
-  }, "Technologies unlocked"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Language: "), "Java, JavaScript (ES6+)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Frontend:"), " React,React-native, Redux, HTML, CSS, Jquery", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Backend: "), "Node.js, Express, Sequelize, PostgreSQL, Sockit.io", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "DevOps: "), "Heroku, Webpack, TDD (Mocha, Chai, Jasmine)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Tools:"), " npm, GitHub, GIT, Visual Studio Code, Postman, Postico, Eclipse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "ProjectsTitle"
-  }, "Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: _public_Resume_pdf__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }, "View Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: _public_Resume_pdf__WEBPACK_IMPORTED_MODULE_1__["default"],
-    download: true
-  }, "Download Resume"));
+  }, "Technologies unlocked"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Technologies/Language: "), "Java, JavaScript, TypeScript, SQL, NoSQL, XML, Hibernate, Spring Boot", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Web Technologies:"), " Angular, TypeScript, HTML5, CSS3, JQuery, JavaScript, Bootstrap, Angular Material, PrimeNG, React, Redux", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Testing/Debugging: "), "Jasmine, Karma, Postman, mocha, chai", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Databases/IDE Tool: "), "Eclipse, VS Code, SQL Server, PostgreSQL, Express, IntelliJ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Others:"), " SVN, GIT, Agile(Scrum), Waterfall, JIRA", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null));
 };
 
 /***/ }),
@@ -902,7 +927,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEB
   className: "logo"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "#"
-}, "Shan Jiang(Fish)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+}, "Fish Jiang")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: "nav-item"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "#intro"
@@ -917,7 +942,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEB
 }, "Contact")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   "class": "alert alert-info",
   role: "alert"
-}, "Version: Dec 17th 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Head__WEBPACK_IMPORTED_MODULE_7__["Head"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Projects__WEBPACK_IMPORTED_MODULE_8__["Projects"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_AboutMe__WEBPACK_IMPORTED_MODULE_11__["AboutMe"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Technologies__WEBPACK_IMPORTED_MODULE_9__["Technologies"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Contact__WEBPACK_IMPORTED_MODULE_10__["Contact"], null)), document.getElementById("app") // make sure this is the same as the id of the div in your index.html
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Head__WEBPACK_IMPORTED_MODULE_7__["Head"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Projects__WEBPACK_IMPORTED_MODULE_8__["Projects"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_AboutMe__WEBPACK_IMPORTED_MODULE_11__["AboutMe"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Technologies__WEBPACK_IMPORTED_MODULE_9__["Technologies"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Contact__WEBPACK_IMPORTED_MODULE_10__["Contact"], null)), document.getElementById("app") // make sure this is the same as the id of the div in your index.html
 );
 var header = document.getElementsByTagName("header")[0]; // We're interested in the first element
 
@@ -937,100 +962,6 @@ var scrollActions = function scrollActions() {
 
 window.addEventListener("scroll", function () {
   window.requestAnimationFrame(scrollActions);
-}); // scrollActions();
-// let ll=60;
-// let ll2=60;
-// let tt =4;
-// setInterval(function (){
-//   let l = $('.tennis').offset().left+ll
-//   let l2 = $('.tennis2').offset().left+ll2
-//   //  let t = $('.tennis').offset().top+tt
-// $('.tennis').css('left',`${l}px`)
-// $('.tennis2').css('left',`${l2}px`)
-// $('.tennis3').css('left',`${l2}px`)
-// // .css('top',`${t}px`)
-// // if( $('.tennis').offset().left>=1444)
-// // $('.tennis').css('left','1000px')
-// if( $('.tennis').offset().left>=666  ||$('.tennis').offset().left<=0)
-// ll=0-ll
-// if( $('.tennis2').offset().left>=666  ||$('.tennis2').offset().left<=0)
-// ll2=0-ll2
-// // if( $('.tennis').offset().top>=700 ||$('.tennis').offset().top<=0)
-// // tt=0-tt
-// //console.log($('.tennis').offset().left)
-// },20)
-// $(()=>{
-// //alert('weagewg')
-//   $('div').fadeOut(20000)
-// })
-// const selection = new $('#main')
-// selection.hide() // "hides" the DOM element with the id of "main"
-// document.querySelector("div");
-//$("div")
-//.css("border",'4px solid red')
-// $(document).ready(()=>{
-//   //$('div')
-//   alert("ewgeg")
-// })
-// $(function() {
-//    // $("image").each(function () {
-//   //   alert("ewgeg")
-//     $('.child').hover(
-//       function () {
-//         alert('awewwwwwwww')
-//         $(this).css(
-//           "flex-grow", "4" /* default 0 */
-//         )
-//       },
-//       function () {
-//         // alert("shutop")
-//         $(this).stop(true).animate({
-//           width: 200,
-//         });
-//       }
-//     );
-//   //  });
-// });
-// $("image").each(function () {
-//   $(this).hover(
-//     function () {
-//       // over
-//       alert("gesdg");
-//       $(this).animate({
-//         width: 400,
-//       });
-//     },
-//     4000,
-//     function () {
-//       // out
-//       $(this).animate({
-//         width: 203.3,
-//       });
-//     }
-//   );
-// });
-
-$(function () {//alert('weagewg')
-});
-document.addEventListener("scroll", function () {
-  var group = $("img");
-  group.each(function () {
-    // if ($(this).offset()<600)
-    // $(this).hide().show(2)
-    if ($(window).scrollTop() >= 3999) $('div').css("border", "4px solid red");
-
-    if ($(this).offset().top - $(window).scrollTop() < 600) {//   $("img").hide(1000)
-      //  $(this).show(22222)
-      // $(this).fadeIn(20)
-    }
-  }); //group.css('border','3px solid red')
-
-  console.log(group.offset().top - $(window).scrollTop());
-  console.log("***"); // alert ('dsgsrh')
-  //  if($(this).scrollTop()>600)
-  //  {
-  //   $('div').fadeOut(2000)
-  //  }
 });
 
 /***/ }),
@@ -52713,19 +52644,6 @@ try {
 
 module.exports = g;
 
-
-/***/ }),
-
-/***/ "./public/Resume.pdf":
-/*!***************************!*\
-  !*** ./public/Resume.pdf ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "Resume.pdf");
 
 /***/ }),
 

@@ -1,66 +1,112 @@
 import React from "react";
 import * as JQuery from "jquery";
-import GoalHero from "./GoalHero";
+
 const $ = JQuery.default;
 
 export const Projects = () => {
   return (
+  
+    <div data-aos="fade-up" id="projects">
+          <br/>   
+      <h1 className="ProjectsTitle">Project</h1>
+  
+      <div  class="BigProjectsTable">
+        <div className="ProjectsContainer">
+          <div class="GoalHeroLeft">
+            <div class="GoalHeroText">
+              <h3> GFI FaxMaker</h3>
+              The GFI FaxMaker Online administration dashboard allows you to
+              graphically view your fax communications over time and drill down
+              to send or received transmissions. It also gives you a breakdown
+              of your international faxing history, a list of the top area codes
+              used when you fax, and the fax numbers you have available. All of
+              this information helps you determine if it’s necessary to request
+              additional fax numbers. Moreover, GFI FaxMaker Online shows how
+              you are helping the environment on the “Trees Saved” section of
+              the dashboard. Using an electronic online fax service helps reduce
+              the amount of paper you use – which saves money and trees.
+            </div>
+          </div>
+          <div class="GoalHeroRight">
+            
+          </div>
+        </div>
+        <br /> <br />
 
-<div data-aos="fade-up">
-    <h1 className = 'ProjectsTitle'>Project</h1>
-    <div id='projects' class="BigProjectsTable">
-      <div className = 'ProjectsContainer'>
-      <div class="GoalHeroLeft" >
-        <div class="GoalHeroText">
-          <h3>GoalHero</h3>
-          Goal Hero is a mobile game/lifestyle app. The main purpose of Goal
-          Hero is to motivate users to complete goals for themselves, while also
-          playing a game. A user can play as a hero and fight against a monster
-          to unlock new and stronger heroes. To get strong enough to defeat the
-          monster, the user must complete goals they set for themself. Tech
-          Used: React Native, Expo, React Native Game Engine, Express, Heroku,
-          Matter.js, PostgreSQL
+
+
+
+
+        <div className="ProjectsContainer">
+          <div class="GoalHeroLeft">
+            <div class="GoalHeroText">
+              <h3>   Management Dashboard</h3>
+            
+Insights into quality grades (CISQ, ISO 5055), automated function points, and structural integrity trends to enable objective decision-making, better IT investments, fact-based management of ADM vendors and internal teams. At-a-glance summary of your software health in terms of robustness, security, efficiency, changeability, transferability, and quality. Accurate sizing metrics that show what you have to manage and how far you've gotten. Heatmap to quickly find where you are at the highest risk. Trending analysis to benchmark performance over time. Fast facts on the evolution of your software.
+
+            </div>
+          </div>
+          <div class="GoalHeroRight">
+           
+          </div>
+        </div>
+        <br /> <br />
+
+
+
+
+
+
+
+
+
+        <div className="ProjectsContainer">
+          <div class="GoalHeroLeft">
+            <div class="GoalHeroText">
+              <h3>    Clarity PPM</h3>
+           
+Clarity PPM enables teams to communicate business outcomes across the organization, allowing stakeholders to agree on a common set of objectives. Automatically update project financials with the actual time spent on each task. Managers can see teams' start and finish dates, booking status, estimated time of completion, total allocations, and total actuals. Create a visual task list on the Clarity PPM (formerly CA Project Portfolio Management), task boards. It provides users with their process flow, assigns staff to tasks, and prioritizes work. Keep all team members in sync and share plans with other groups and executives. Clarity PPM’s financial planning pages have been redesigned to mimic Microsoft Excel spreadsheets in both looks and feel. It provides one consolidated view of each employee’s project queue and their schedule. Managers explore staffing options with telescoping and pinning features that replace outdated filtering and matching tools.
+
+            </div>
+          </div>
+          <div class="GoalHeroRight">
+           
+          </div>
+        </div>
+        <br /> <br />
+
+
+
+
+
+
+        <div className="ProjectsContainer">
+          <div class="GoalHeroLeft">
+            <div class="GoalHeroText">
+              <h3>       Inova for Pharma</h3>
+           
+          
+Inova is the partnering platform for pharma companies to manage their opportunities more efficiently. They find all their partnering information in one place, track their deals and alliances easily and report on their pipeline and activities It has several features like Search Evaluation, Opportunities Tracking, Alliance Management, Reporting.
+
+            </div>
+          </div>
+          <div class="GoalHeroRight">
+            
+          </div>
+        </div>
+        <br /> <br />
+
+
+
+
+
+
+
+
+
+      
         
-        </div>
-        <div class = 'GoalHeroDemo'>
-<a href ='https://expo.io/@ericfish/projects/GoalHero'>DEMO</a>
-<a href ='https://github.com/GoalHero/GoalHero'>GITHUB</a>
-        </div>
       </div>
-      <div class="GoalHeroRight" >
-        <br/>     <br/>     <br/>     <br/>
-        <GoalHero />
-      </div>
-      </div>
-      <br/> <br/> 
-      <div className = 'ProjectsContainer'>
-      <div class="CheeseLeft"  >
-        <div class="GoalHeroText">
-        <br/> <br/> 
-          <h3>Grace Cheese Prime</h3>
-          A basic e-commerce website that sells cheeses. Developed with JavaScript, React, Redux, Express and PostgreSQL. Designed and implemented a simple user experience to view and purchase cheeses.Used conventional Rest API and git workflow to manage team development.
-       
-        </div>
-        <div class = 'GoalHeroDemo'>
-<a href ='https://grace-cheese-prime.herokuapp.com/'>DEMO</a>
-<a href ='https://github.com/2008-FSA-Grace-Shopper-Cheese/GraceShopper'>GITHUB</a>
-        </div>
-      </div>
-
-      <div class="CheeseRight"  >
-        <img src="cheesePrime.jpg" />
-      </div>
-      </div>
-
-     
-
-{/* <div class="tennis3"></div> */}
-
-
-
-
-
-</div>
     </div>
   );
 };
