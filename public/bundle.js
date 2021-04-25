@@ -86,136 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./Dota.js":
-/*!*****************!*\
-  !*** ./Dota.js ***!
-  \*****************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Dota; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _public_data_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./public/data.json */ "./public/data.json");
-var _public_data_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./public/data.json */ "./public/data.json", 1);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-
-var Dota = /*#__PURE__*/function (_React$Component) {
-  _inherits(Dota, _React$Component);
-
-  var _super = _createSuper(Dota);
-
-  function Dota() {
-    var _this;
-
-    _classCallCheck(this, Dota);
-
-    _this = _super.call(this);
-    _this.state = {
-      heros: [],
-      "try": 0
-    };
-    return _this;
-  }
-
-  _createClass(Dota, [{
-    key: "componentDidMount",
-    value: function () {
-      var _componentDidMount = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var array, heros;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return fetch("data.json");
-
-              case 2:
-                array = _context.sent;
-                _context.next = 5;
-                return array.json();
-
-              case 5:
-                heros = _context.sent;
-                this.setState({
-                  heros: heros
-                }); //console.log("********",allHeros)
-
-              case 7:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function componentDidMount() {
-        return _componentDidMount.apply(this, arguments);
-      }
-
-      return componentDidMount;
-    }()
-  }, {
-    key: "render",
-    value: function render() {
-      var heros = this.state.heros; // this.setState({try:1})
-      // console.log(this.state.try,'*******')
-
-      if (!heros.length) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "2");else return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
-      }, heros.map(function (hero, index) {
-        if (index <= 4) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "child",
-          key: index
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "3333"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          width: 203.3,
-          height: 150,
-          src: hero,
-          name: index,
-          id: index
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "daddy"
-        }, "dwgwerjretjetrherh")));
-      }));
-    }
-  }]);
-
-  return Dota;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-
-
-/***/ }),
-
 /***/ "./component/AboutMe.js":
 /*!******************************!*\
   !*** ./component/AboutMe.js ***!
@@ -454,250 +324,6 @@ var Contact = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-/***/ "./component/GoalHero.js":
-/*!*******************************!*\
-  !*** ./component/GoalHero.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return GoalHero; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _public_data_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/data.json */ "./public/data.json");
-var _public_data_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/data.json */ "./public/data.json", 1);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-
-var $ = jquery__WEBPACK_IMPORTED_MODULE_2___default.a;
-var array = [];
-
-for (var i = 1; i < 13; i++) {
-  array[i] = i;
-}
-
-var GoalHero = /*#__PURE__*/function (_React$Component) {
-  _inherits(GoalHero, _React$Component);
-
-  var _super = _createSuper(GoalHero);
-
-  function GoalHero() {
-    _classCallCheck(this, GoalHero);
-
-    return _super.apply(this, arguments);
-  }
-
-  _createClass(GoalHero, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "GoalHero",
-        id: "GoalHero"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "GoalHeroContainer"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero1.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero2.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero3.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero4.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero5.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero6.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero7.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero8.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero9.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero10.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero11.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero12.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero13.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "GoalHero1.png"
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "ol"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        id: "leftArrow",
-        "class": "bi bi-arrow-left-circle-fill"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "16",
-        height: "16",
-        fill: "currentColor",
-        "class": "bi bi-chevron-left",
-        viewBox: "0 0 16 16"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-        "fill-rule": "evenodd",
-        d: "M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        k: 0,
-        "class": "GoalHeroActive"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "16",
-        height: "16",
-        fill: "currentColor",
-        "class": "bi bi-circle",
-        viewBox: "0 0 16 16"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-        "fill-rule": "evenodd",
-        d: "M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-      }))), array.map(function (element, index) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          key: index,
-          k: index
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-          xmlns: "http://www.w3.org/2000/svg",
-          width: "16",
-          height: "16",
-          fill: "currentColor",
-          "class": "bi bi-circle",
-          viewBox: "0 0 16 16"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-          "fill-rule": "evenodd",
-          d: "M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-        })));
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        id: "rightArrow"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "16",
-        height: "16",
-        fill: "currentColor",
-        "class": "bi bi-chevron-right",
-        viewBox: "0 0 16 16"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-        "fill-rule": "evenodd",
-        d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-      })))));
-    }
-  }]);
-
-  return GoalHero;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-
-$(function () {
-  var btn = $(".GoalHero ol li");
-  var oul = $(".GoalHero .GoalHeroContainer"); //set a timer auto roll
-
-  var currentPng = 0;
-  var timer = setInterval(function () {
-    currentPng++;
-    tab();
-
-    if ($(".ol .GoalHeroActive").next().attr("k") == undefined) {
-      $(".ol div").first().attr("class", "GoalHeroActive").siblings().attr("class", "");
-    } else $(".ol .GoalHeroActive").next().attr("class", "GoalHeroActive").siblings().attr("class", "");
-
-    console.log($(".ol .GoalHeroActive").attr("k"));
-  }, 2000); //click the one
-
-  $(".ol div").click(function () {
-    $(this).attr("class", "GoalHeroActive").siblings().attr("class", "");
-    currentPng = $(this).attr("k");
-    var whichOne = $(this).attr("k");
-    oul.animate({
-      left: whichOne * -240
-    }, 500, function () {
-      if (currentPng == 13) {
-        currentPng = 0;
-        oul.css("left", 0);
-      }
-    });
-  }); //click the left arrow
-
-  $("#leftArrow").click(function () {
-    if (currentPng != 0) {
-      currentPng--;
-      $(".ol .GoalHeroActive").prev().attr("class", "GoalHeroActive").siblings().attr("class", "");
-      var moveToWhich = $(".ol .GoalHeroActive").attr("k");
-      console.log(moveToWhich);
-      oul.animate({
-        left: moveToWhich * -240
-      }, 200, function () {// if(currentPng==13){
-        // currentPng=0;
-        // oul.css('left',0)}
-      });
-    }
-  }); //click the right arrow
-
-  $("#rightArrow").click(function () {
-    if (currentPng != 12) {
-      currentPng++;
-      $(".ol .GoalHeroActive").next().attr("class", "GoalHeroActive").siblings().attr("class", "");
-      var moveToWhich = $(".ol .GoalHeroActive").attr("k");
-      console.log(moveToWhich);
-      oul.animate({
-        left: moveToWhich * -240
-      }, 200, function () {});
-    }
-  }); //mouse over
-
-  $(".GoalHero,.ol").mouseenter(function () {
-    clearInterval(timer);
-  }).mouseleave(function () {
-    timer = setInterval(function () {
-      currentPng++;
-      tab();
-
-      if ($(".ol .GoalHeroActive").next().attr("k") == undefined) {
-        $(".ol div").first().attr("class", "GoalHeroActive").siblings().attr("class", "");
-      } else $(".ol .GoalHeroActive").next().attr("class", "GoalHeroActive").siblings().attr("class", "");
-
-      console.log($(".ol .GoalHeroActive").attr("k"));
-    }, 2000);
-  }); //auto function
-
-  function tab() {
-    oul.animate({
-      left: currentPng * -240
-    }, 500, function () {
-      if (currentPng == 13) {
-        currentPng = 0;
-        oul.css("left", 0);
-      }
-    });
-  }
-});
-
-/***/ }),
-
 /***/ "./component/Head.js":
 /*!***************************!*\
   !*** ./component/Head.js ***!
@@ -710,11 +336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Head", function() { return Head; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 
-
-var $ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 var Head = function Head() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tennisTable"
@@ -797,11 +419,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Projects", function() { return Projects; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 
-
-var $ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 var Projects = function Projects() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     "data-aos": "fade-up",
@@ -891,25 +509,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Dota__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Dota */ "./Dota.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _component_GoalHero__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./component/GoalHero */ "./component/GoalHero.js");
-/* harmony import */ var _component_Head__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./component/Head */ "./component/Head.js");
-/* harmony import */ var _component_Projects__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./component/Projects */ "./component/Projects.js");
-/* harmony import */ var _component_Technologies__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./component/Technologies */ "./component/Technologies.js");
-/* harmony import */ var _component_Contact__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./component/Contact */ "./component/Contact.js");
-/* harmony import */ var _component_AboutMe__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./component/AboutMe */ "./component/AboutMe.js");
-
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _component_Head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/Head */ "./component/Head.js");
+/* harmony import */ var _component_Projects__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./component/Projects */ "./component/Projects.js");
+/* harmony import */ var _component_Technologies__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./component/Technologies */ "./component/Technologies.js");
+/* harmony import */ var _component_Contact__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./component/Contact */ "./component/Contact.js");
+/* harmony import */ var _component_AboutMe__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./component/AboutMe */ "./component/AboutMe.js");
 
 
  //import {$,jQuery} from 'jquery';
 
 
-var $ = jquery__WEBPACK_IMPORTED_MODULE_4___default.a;
-
+var $ = jquery__WEBPACK_IMPORTED_MODULE_3___default.a;
 
 
 
@@ -918,7 +532,7 @@ var $ = jquery__WEBPACK_IMPORTED_MODULE_4___default.a;
  //import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 
-aos__WEBPACK_IMPORTED_MODULE_5___default.a.init(); //import plugin from 'jquery-plugin'
+aos__WEBPACK_IMPORTED_MODULE_4___default.a.init(); //import plugin from 'jquery-plugin'
 // export for others scripts to use
 // window.$ = $;
 // window.jQuery = jQuery;
@@ -942,7 +556,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEB
 }, "Contact")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   "class": "alert alert-info",
   role: "alert"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Head__WEBPACK_IMPORTED_MODULE_7__["Head"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Projects__WEBPACK_IMPORTED_MODULE_8__["Projects"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_AboutMe__WEBPACK_IMPORTED_MODULE_11__["AboutMe"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Technologies__WEBPACK_IMPORTED_MODULE_9__["Technologies"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Contact__WEBPACK_IMPORTED_MODULE_10__["Contact"], null)), document.getElementById("app") // make sure this is the same as the id of the div in your index.html
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Head__WEBPACK_IMPORTED_MODULE_5__["Head"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Projects__WEBPACK_IMPORTED_MODULE_6__["Projects"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_AboutMe__WEBPACK_IMPORTED_MODULE_9__["AboutMe"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Technologies__WEBPACK_IMPORTED_MODULE_7__["Technologies"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Contact__WEBPACK_IMPORTED_MODULE_8__["Contact"], null)), document.getElementById("app") // make sure this is the same as the id of the div in your index.html
 );
 var header = document.getElementsByTagName("header")[0]; // We're interested in the first element
 
@@ -52644,17 +52258,6 @@ try {
 
 module.exports = g;
 
-
-/***/ }),
-
-/***/ "./public/data.json":
-/*!**************************!*\
-  !*** ./public/data.json ***!
-  \**************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[\"https://i.imgur.com/hjEkdfQ_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/e3nmpwl_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/kQdzPgD_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/I9u4j6B_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/g0uz6BD_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/0hQTpc8_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/CRVHKVQ_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/paC9vYv_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/6FthuE2_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/rt6jhj5_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/0cZtvWz_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/YytuN0W_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/dfEmvjo_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/vARVaeC_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/cpjTinS_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/I2qOOW5_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/cIw9UAt_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/MSsCJX0_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/3AQ9pdk_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/OofURQE_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/WsJp9vk_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/J4CA8LG_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/cv723mE_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/2NoNUSn_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/UeJK2h5_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/cisT6Mp_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/lQczn8q_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/MtyUmcN_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/nEgRbY8_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/oKxgLLD_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/vOE7vDl_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/6DHm4Rv_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/XQA1XmJ_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/c6fGNxN_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/Dt60Pfu_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/8SyFSNK_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/VYC5DPq_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/HN5Fusl_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/eXkJR2U_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/lRD2cQm_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/R6SeKt7_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/h3cfvg6_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/CkZpxnh_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/XhlsITd_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/sySpyXT_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/Ipr5oRt_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/dFQo3bV_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/lmJJTbQ_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/MQVxJMB_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/h8Y0nCz_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/7izkzqw_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/JZN8tp2_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/1ixpB85_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/XMRGQPv_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/tdAwgyO_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/Qu2b6To_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/27Rh9no_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/cORd8L9_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/XmIBq0L_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/P0jPHCZ_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/ZjBfe2M_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/3OeCNuk_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/KTM5MS8_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/Kc9La3F_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/mI2Qw4k_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/nYtLQMm_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/FyXcKe6_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/bNUJ4Ii_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/KPbXgGz_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/A5jgV8D_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/ZHBBKla_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/KSQOHv3_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/LAutsQc_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/g2qA4B2_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/sN7HoGY_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/fpw2j1d_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/xid7lUq_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/M067NkX_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/gfbwyZl_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/wsnzYtO_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/9svBnSG_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/SwoMhHL_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/RoqzHEd_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/N1FeWX5_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/MmdQtjT_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/plf7fkQ_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/eJxp6am_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/nCseXuO_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/ohjN0fa_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/0AGrnxn_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/yP7gMvB_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/fJZ889K_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/AGp5JQs_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/kcUV4N9_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/dOxwSuk_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/Fhfw8oy_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/wp20zrg_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/6H2W1Jo_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/aDYHLTX_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/HOJleDV_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/MZkqtok_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/y3ffjgv_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/E9kVZ7B_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/XHI6bF9_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/CZ4bBRO_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/clzxD4H_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/pmkOHsk_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/TOvsMmM_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/NgHmmgi_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/AgYiNm8_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/VKBFVSK_d.webp?maxwidth=728&fidelity=grand\",\"https://i.imgur.com/rw13Oku_d.webp?maxwidth=728&fidelity=grand\"]");
 
 /***/ }),
 

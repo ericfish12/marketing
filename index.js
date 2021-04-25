@@ -1,12 +1,12 @@
 import "regenerator-runtime/runtime";
 import React from "react";
 import ReactDOM from "react-dom";
-import Dota from "./Dota";
+ 
 //import {$,jQuery} from 'jquery';
 import * as JQuery from "jquery";
 const $ = JQuery.default;
 import AOS from 'aos';
-import GoalHero from "./component/GoalHero";
+ 
 import {Head} from './component/Head'
 import{Projects}from './component/Projects'
 import{Technologies}from './component/Technologies'
