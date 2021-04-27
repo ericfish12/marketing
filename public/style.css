@@ -399,3 +399,8 @@ h2{
 }
  
 }
+
+.float-right{
+  font-size: 1.5rem;
+  float:right;
+}
