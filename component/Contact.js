@@ -77,7 +77,7 @@ else alert('Please use a valid Email')
 <br/>
 <div class="mb-3">
  
-  <textarea class="form-control"placeholder="message" id="exampleFormControlTextarea1" rows="3"   type="text"
+  <textarea class="form-control"placeholder="Please leave a message, I will get back to you as soon as possible..." id="exampleFormControlTextarea1" rows="3"   type="text"
             name="message"
             value={this.state.message}
             onChange={this.handleChange}></textarea>
